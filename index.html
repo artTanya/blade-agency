@@ -8,20 +8,123 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="#">
-        <img src="" alt="Логотип агенства"></img>
-      </a>
+      <div class="main-header__logo">
+        <a href="#">
+          <img src="" alt="Логотип агенства"></img>
+        </a>
+      </div>  
       <ul class="main-header__main-nav">
-        <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Участники</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Жюри</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Билеты</a></li>
-        <li class="main-nav__item"><a class="main-nav__link">Контакты</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Участники</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Жюри</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Билеты</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
       </ul>
       <div class="main-header__switch-lang">
-        <button class="switch-lang__button"></button>
-      </div>
+        <button class="switch-lang__button">Рус</button>
+        <ul class="switch-lang__list">
+          <li class="switch-lang__item">
+            <input type="radio" name="lang" id="rus" value="рус" checked>
+            <label for="rus">рус</label>
+          </li>
+          <li class="switch-lang__item">
+            <input type="radio" name="lang" id="eng" value="англ">
+            <label for="eng">англ</label>
+          </li>
+        </ul>
 
+      </div>
     </header>
+    <main class="main">
+      <section class="preview">
+        <p class="preview__hashtag">#bladefashion2019</p>
+        <h1 class="preview__headline">Показ лучших молодых дизайнеров России</h1>
+        <ul class="preview__info-list info-list">
+          <li class="info-list__item">18 ноября 12<sup>30</sup>-20<sup>00</sup></li>
+          <li class="info-list__item">Москва Лофт-центр «Эдем»</li>
+          <li class="info-list__item">Победитель едет на показ Blade в Париж!</li>
+        </ul>
+        <a href="#">Бронь билета</a>
+        <ul class="preview__social-list social-list">
+          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Инстграмме</span></a></li>
+          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+        </ul>
+        <div class="number">
+          <span class="number__item">01/</span>
+          <span class="number__item">05</span>
+        </div>
+      </section>
+      <section class="participants">
+        <h2 class="participants__hedline">Участники</h2>
+        <div class="participants__model model">
+          <p class="model__text">Классика, нуар</p>
+          <div class="model__photo">
+            <img src="" alt="Модель №1"></img>
+          </div>
+          <div class="model__toggles toggles">
+            <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
+            <button class="toggles__arrow toggles__arrow--right" aria-label="Следущее фото"></button>
+          </div>
+          <div class="model__stylist stylist">
+            <div class="stylist__photo">
+              <img class="stylist__image"src="" alt="Фото стилиста"></img>
+            </div>
+            <h3 class="stylist__name">Дэвид Робинсон</h3>
+            <p class="stylist__bottom-text">CША</p>
+            <ul class="stylist__social-list social-list">
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="participants__model model">
+          <p class="model__text">Авангард, импрессионизм</p>
+          <div class="model__photo">
+            <img src="" alt="Модель №2"></img>
+          </div>
+          <div class="model__toggles toggles">
+            <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
+            <button class="toggles__arrow toggles__arrow--right" aria-label="Следущее фото"></button>
+          </div>
+          <div class="model__stylist stylist">
+            <div class="stylist__photo">
+              <img class="stylist__image"src="" alt="Фото стилиста"></img>
+            </div>
+            <h3 class="stylist__name">Келли Макдональд</h3>
+            <p class="stylist__bottom-text">Ирландия</p>
+            <ul class="stylist__social-list social-list">
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
+            </ul>
+          </div>
+        </div> 
+        <div class="participants__model model">
+          <p class="model__text">Эклектика, эконтренд</p>
+          <div class="model__photo">
+            <img src="" alt="Модель №3"></img>
+          </div>
+          <div class="model__toggles toggles">
+            <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
+            <button class="toggles__arrow toggles__arrow--right" aria-label="Следущее фото"></button>
+          </div>
+          <div class="model__stylist stylist">
+            <div class="stylist__photo">
+              <img class="stylist__image"src="" alt="Фото стилиста"></img>
+            </div>
+            <h3 class="stylist__name">Костас Папаниколау</h3>
+            <p class="stylist__bottom-text">Греция</p>
+            <ul class="stylist__social-list social-list">
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
+              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
+            </ul>
+          </div>
+        </div>   
+
+      </section>
+    </main>
 
   </body>
