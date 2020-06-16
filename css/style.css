@@ -1,0 +1,100 @@
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #ffffff;
+  color: #303030;
+  margin:0;
+}
+
+.main-header {
+  background-color: rgba(95, 75, 139, 0.87);
+  margin: 0;
+}
+
+.main-header__content-wrapper {
+  width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px; 
+}
+
+.main-header__logo {
+  background-color: #ffffff;
+  width: 260px;
+  height: 145px;
+}
+
+.main-nav{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.switch-lang__list {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.preview {
+  background-color: rgba(95, 75, 139, 0.87);
+  margin: 0;
+}
+
+.preview__hashtag {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2C03F;
+  margin: 0;
+}
+
+.preview__headline {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 110%;
+  color: #FFF5F5;
+  margin: 0;
+}
+
+.info-list__item {
+  list-style: none;
+  color: #ffffff;
+}
+
+.preview__ticket-reservation {
+  width: 300px;
+  height: 93px;
+  background-color: #ffffff;
+}
+
+.preview__ticket-reserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #303030;
+  text-transform: uppercase;;
+}
+
+.social-list {
+  list-style: none;  
+}
+
+.social-list__link {
+  text-decoration: none;
+}
+
+.social-list__item--fb {
+  background-image: url("/img/icon-fb.svg");
+  background-repeat: no-repeat;
+  width:50px;
+  height: 50px;
+
+}

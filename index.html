@@ -4,34 +4,36 @@
     <meta charset="utf-8">
     <title>Blade-agency</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <a href="#">
-          <img src="http://placehold.it/50x50" alt="Логотип агенства">
-        </a>
-      </div>  
-      <ul class="main-header__main-nav">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Участники</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Жюри</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Билеты</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-      </ul>
-      <div class="main-header__switch-lang">
-        <button class="switch-lang__button">Рус</button>
-        <ul class="switch-lang__list">
-          <li class="switch-lang__item">
-            <input type="radio" name="lang" id="rus" value="рус" checked>
-            <label for="rus">рус</label>
-          </li>
-          <li class="switch-lang__item">
-            <input type="radio" name="lang" id="eng" value="англ">
-            <label for="eng">англ</label>
-          </li>
+      <div class="main-header__content-wrapper">
+        <div class="main-header__logo">
+          <a href="#">
+            <img class="main-header__logotype" src="img/blade.svg" width="180" height="42" alt="Логотип агенства">
+          </a>
+        </div>  
+        <ul class="main-header__main-nav main-nav">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Участники</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Жюри</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Билеты</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
         </ul>
+        <div class="main-header__switch-lang switch-lang">
+          <button class="switch-lang__button">Рус</button>
+          <ul class="switch-lang__list">
+            <li class="switch-lang__item">
+              <input type="radio" name="lang" id="rus" value="рус" checked>
+              <label for="rus">рус</label>
+            </li>
+            <li class="switch-lang__item">
+              <input type="radio" name="lang" id="eng" value="англ">
+              <label for="eng">англ</label>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -43,11 +45,14 @@
           <li class="info-list__item">Москва Лофт-центр «Эдем»</li>
           <li class="info-list__item">Победитель едет на показ Blade в Париж!</li>
         </ul>
-        <a href="#">Бронь билета</a>
+        <div class="preview__ticket-reservation">
+          <a class="preview__ticket-reserve" href="#">Бронь билета</a>
+        </div>  
         <ul class="preview__social-list social-list">
-          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
-          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Инстграмме</span></a></li>
-          <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          <li class="social-list__item social-list__item--fb"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+           </a></li>
+          <li class="social-list__item social-list__item--instagramm"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Инстграмме</span></a></li>
+          <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
         </ul>
         <div class="number">
           <span class="number__item">01/</span>
