@@ -8,6 +8,9 @@ body {
   color: #303030;
   margin:0;
 }
+.visually-hidden {
+  display: none;
+}
 
 .main-header {
   background-color: rgba(95, 75, 139, 0.87);
@@ -21,6 +24,9 @@ body {
 }
 
 .main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   width: 260px;
   height: 145px;
@@ -44,46 +50,104 @@ body {
   padding:0;
 }
 .preview {
+  display: flex;
   background-color: rgba(95, 75, 139, 0.87);
   margin: 0;
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .preview__hashtag {
   font-size: 24px;
   line-height: 29px;
-  color: #F2C03F;
+  color: #f2c03f;
   margin: 0;
 }
 
 .preview__headline {
-  font-weight: 900;
+  width: 920px;
+  font-weight: 700;
   font-size: 72px;
-  line-height: 110%;
-  color: #FFF5F5;
+  line-height: 79px;
+  color: #fff5f5;
   margin: 0;
+}
+
+.preview__ticket-reservation-link-arrow {
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .info-list__item {
   list-style: none;
   color: #ffffff;
+  padding-left: 60px;
+  height: 44px;
+  border-right: 1px solid #ffffff;
+}
+
+.info-list__item--time {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  width: 130px;
+  margin: 0;
+}
+
+.info-list__item--address {
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat;
+  padding-right: 57px;
+  margin: 0;
+}
+
+.info-list__item--winner {
+  background-image: url("../img/present.svg");
+  background-repeat: no-repeat;
+  border-right: none;
+  margin: 0;
+}
+
+.preview__ticket-reserve {
+  display: flex;
 }
 
 .preview__ticket-reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 93px;
   background-color: #ffffff;
 }
 
-.preview__ticket-reserve {
+.preview__ticket-reservation-link {
+  text-decoration: none;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+.preview__ticket-reservation-yellow {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #303030;
-  text-transform: uppercase;;
+  width: 107px;
+  height: 93px;
+  background-color: #f2c03f;
 }
 
 .social-list {
+  display: flex;
   list-style: none;  
 }
 
@@ -91,10 +155,22 @@ body {
   text-decoration: none;
 }
 
-.social-list__item--fb {
-  background-image: url("/img/icon-fb.svg");
-  background-repeat: no-repeat;
-  width:50px;
+.social-list__item {
+  width: 50px;
   height: 50px;
+}
 
+.social-list__item--fb {
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+}
+
+.social-list__item--instagram {
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+}
+
+.social-list__item--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
 }

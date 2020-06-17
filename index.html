@@ -38,25 +38,42 @@
     </header>
     <main class="main">
       <section class="preview">
-        <p class="preview__hashtag">#bladefashion2019</p>
-        <h1 class="preview__headline">Показ лучших молодых дизайнеров России</h1>
-        <ul class="preview__info-list info-list">
-          <li class="info-list__item">18 ноября 12<sup>30</sup>-20<sup>00</sup></li>
-          <li class="info-list__item">Москва Лофт-центр «Эдем»</li>
-          <li class="info-list__item">Победитель едет на показ Blade в Париж!</li>
-        </ul>
-        <div class="preview__ticket-reservation">
-          <a class="preview__ticket-reserve" href="#">Бронь билета</a>
+        <div class="preview__wrapper">
+          <div class="preview__text-block">
+          <p class="preview__hashtag">#bladefashion2019</p>
+          <h1 class="preview__headline">Показ лучших молодых дизайнеров России</h1>
+          <ul class="preview__info-list info-list">
+            <li class="info-list__item info-list__item--time">18 ноября 12<sup>30</sup>-20<sup>00</sup></li>
+            <li class="info-list__item info-list__item--address">Москва Лофт-центр «Эдем»</li>
+            <li class="info-list__item info-list__item--winner">Победитель едет на показ Blade в Париж!</li>
+          </ul>
+          <div class="preview__ticket-reserve">
+            <div class="preview__ticket-reservation">
+              <a class="preview__ticket-reservation-link" href="#">Бронь билета</a>
+            </div>
+            <div class="preview__ticket-reservation-yellow">
+              <a class="preview__ticket-reservation-link-arrow" href="#"><span class="visually-hidden">Перейти</span></a>
+            </div> 
+          </div> 
+          <ul class="preview__social-list social-list">
+            <li class="social-list__item social-list__item--fb"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+            </a></li>
+            <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Инстграмме</span>
+            </a></li>
+            <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          </ul>
+          </div>  
+          <div class="number">
+           <span class="number__item">01/</span>
+           <span class="number__item">05</span>
+          </div>
         </div>  
-        <ul class="preview__social-list social-list">
-          <li class="social-list__item social-list__item--fb"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
-           </a></li>
-          <li class="social-list__item social-list__item--instagramm"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Инстграмме</span></a></li>
-          <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
-        </ul>
-        <div class="number">
-          <span class="number__item">01/</span>
-          <span class="number__item">05</span>
+        <div class="preview__image">
+          <img src="img/main-background-desktop@1x.png" alt="Фото модели">
+        </div>
+        <div class="preview__toggles toggles">
+          <button class="toggles__arrow toggles__arrow--left" type="button" aria-label="Предыдущий"></button>
+          <button class="toggles__arrow toggles__arrow--right" type="button" aria-label="Следующий"></button>
         </div>
       </section>
       <section class="participants">
@@ -77,9 +94,9 @@
             <h3 class="stylist__name">Дэвид Робинсон</h3>
             <p class="stylist__bottom-text">CША</p>
             <ul class="stylist__social-list social-list">
-              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
-              <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
-              <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
+              <li class="social-list__item social-list__item--instagram"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
+              <li class="social-list__item social-list__item--fb"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
+              <li class="social-list__item social-list__item--twitter"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
             </ul>
           </div>
         </div>
