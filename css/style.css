@@ -18,6 +18,8 @@ body {
 }
 
 .main-header__content-wrapper {
+  display: flex;
+  justify-content: space-between;
   width: 1800px;
   margin: 0 auto;
   padding: 0 15px; 
@@ -33,7 +35,10 @@ body {
 }
 
 .main-nav{
+  width: 740px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -44,6 +49,10 @@ body {
   color: #ffffff;
 }
 
+.switch-lang {
+  display: flex;
+  align-items: center;
+}
 .switch-lang__list {
   list-style: none;
   margin:0;
@@ -60,11 +69,16 @@ body {
   flex-direction: row-reverse;
 }
 
+.preview__text-block {
+  padding-top: 160px;
+}
+
 .preview__hashtag {
   font-size: 24px;
   line-height: 29px;
   color: #f2c03f;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .preview__headline {
@@ -74,6 +88,7 @@ body {
   line-height: 79px;
   color: #fff5f5;
   margin: 0;
+  margin-bottom: 70px;
 }
 
 .preview__ticket-reservation-link-arrow {
@@ -82,10 +97,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.preview__img {
+  display: block;
+}
+
 .info-list {
+  width: 843px;
   display: flex;
   margin: 0;
   padding: 0;
+  margin-bottom: 120px;
 }
 
 .info-list__item {
@@ -119,6 +140,7 @@ body {
 
 .preview__ticket-reserve {
   display: flex;
+  margin-bottom: 140px;
 }
 
 .preview__ticket-reservation {
@@ -149,6 +171,8 @@ body {
 .social-list {
   display: flex;
   list-style: none;  
+  margin: 0;
+  padding: 0;
 }
 
 .social-list__link {
