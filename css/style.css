@@ -332,6 +332,11 @@ label[for="eng"]::before {
   margin: 0;
   padding:0;
 }
+.participants-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 
 .model__img,
 .judges__img {
@@ -371,11 +376,13 @@ label[for="eng"]::before {
   opacity: 0.32;
   margin: 0;
 }
+
 .stylist__social-list .social-list__item {
   margin-bottom: 0;
 }
 
 .judges__items {
+  display: flex;
   list-style: none;
 }
 
@@ -411,10 +418,28 @@ label[for="eng"]::before {
   color: #303030;
   opacity: 0.87;
   margin: 0;
+  margin-bottom: 24px;
+}
+
+.tickets__wrapper {
+  display: flex;
+
 }
 
 .tickets__column {
   width: 480px;
+  margin-right: 100px;
+}
+
+.tickets__table {
+  width: 940px;
+  border: 1px solid #f2C03f;;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+.tickets__row:nth-child(2n) {
+  background: rgba(242, 192, 63, 0.1);
 }
 
 .tickets__phone {
@@ -425,14 +450,58 @@ label[for="eng"]::before {
   margin: 0;
 }
 
+.tickets__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #323C47;
+}
+
+.tickets__field {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #303030;
+  opacity: 0.87;
+  padding: 15px;
+}
+
+.tickets__field--available {
+  background-image: url("../img/mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .payments {
   width: 330px;
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin:0;
+  margin: 0;
+}
 
+.tickets__payments {
+  margin-bottom: 30px;
+}
+
+.rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rates__item {
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 19px;
 }
 
 .contacts__title {
@@ -461,6 +530,17 @@ label[for="eng"]::before {
   color: #303030;
 }
 
+.user-form__wrapper {
+  width: 593px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form__wrapper input {
+  border: none;
+  border-bottom: 1px solid pink;
+}
+
 .user-form__wrapper label {
   font-weight: bold;
   font-size: 14px;
@@ -469,4 +549,24 @@ label[for="eng"]::before {
   text-transform: uppercase;
   color: #303030;
   opacity: 0.32;
+}
+.button {
+  width: 192px;
+  background-color: #ffffff;
+  color: #303030;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid #d0d7dd;
+  border-radius: 5px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.button--violet {
+  border: transparent;
+  color: #ffffff;
+  background-color: rgba(95, 75, 139, 0.87);
 }

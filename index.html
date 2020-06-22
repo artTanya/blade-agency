@@ -82,7 +82,8 @@
       </section>
       <section class="participants">
         <h2 class="participants__headline headline">Участники</h2>
-        <div class="participants__model model">
+        <ul class="participants__participants-list participants-list">
+        <li class="participants-list__model model">
           <p class="model__text">Классика, нуар</p>
           <div class="model__photo">
             <img class="model__img" src="img/model-1@1x.jpg" alt="Модель №1" width="448" height="580">
@@ -107,8 +108,8 @@
               </ul>
             </div>  
           </div>
-        </div>
-        <div class="participants__model model">
+        </li>
+        <li class="participants-list__model model">
           <p class="model__text">Авангард, импрессионизм</p>
           <div class="model__photo">
             <img class="model__img" src="img/model-2@1x.jpg" alt="Модель №2" width="448" height="580">
@@ -129,8 +130,8 @@
               <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
             </ul>
           </div>
-        </div> 
-        <div class="participants__model model">
+        </li> 
+        <li class="participants-list__model model">
           <p class="model__text">Эклектика, эконтренд</p>
           <div class="model__photo">
             <img class="model__img" src="img/model-3@1x.jpg" alt="Модель №3">
@@ -151,7 +152,8 @@
               <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
             </ul>
           </div>
-        </div> 
+        </li>
+      </ul> 
         <div class="numbers">
           <span class="numbers__numeral">02/</span>
           <span class="numbers__numeral">/</span>
@@ -215,7 +217,7 @@
         <h2 class="tickets__headline headline">Билеты</h2>
         <div class="tickets__wrapper">
           <div class="tickets__column">
-            <p class="tickets__text">Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:</p>
+            <p class="tickets__text">Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций) и произвести оплату онлайн. Мы принимаем оплату:</p>
             <ul class="tickets__payments payments">
               <li class="payments__item">
                 <img src="img/visa@1x.png" alt="visa"  width="47" height="15">
@@ -235,52 +237,70 @@
           </div>
           <table class="tickets__table">
             <tr>
-              <th></th>
-              <th>Зритель</th>
-              <th>Оптиум</th>
-              <th>VIP</th>
+              <th class="tickets__title"></th>
+              <th class="tickets__title">Зритель
+                <ul class="tickets__rates rates">
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                </ul>
+              </th>
+              <th class="tickets__title">Оптиум
+                <ul class="tickets__rates rates">
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                </ul>
+              </th>
+              <th class="tickets__title">VIP
+                <ul class="tickets__rates rates">
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                  <li class="rates__item"></li>
+                </ul>
+              </th>
             </tr>
-            <tr>
-              <td>Пакет гостя форума</td>
-              <td>да</td>
-              <td>да</td>
-              <td> да</td>
+            <tr class="tickets__row">
+              <td class="tickets__field">Пакет гостя форума</td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
-              <td>Церемония открытия</td>
-              <td>Да</td>
-              <td>Да</td>
-              <td>Да</td>
+            <tr class="tickets__row">
+              <td class="tickets__field">Церемония открытия</td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
-              <td>Вход на показ</td>
-              <td>Да</td>
-              <td>Да</td>
-              <td>Да</td>
+            <tr class="tickets__row">
+              <td  class="tickets__field">Вход на показ</td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
-              <td>Возможность голосовать</td>
-              <td>нет</td>
-              <td>да</td>
-              <td>да</td>
+            <tr class="tickets__row">
+              <td class="tickets__field">Возможность голосовать</td>
+              <td class="tickets__field"></td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
-              <td>Доступ за кулисы</td>
-              <td>нет</td>
-              <td>да</td>
-              <td>да</td>
+            <tr class="tickets__row">
+              <td class="tickets__field">Доступ за кулисы</td>
+              <td class="tickets__field"></td>
+              <td class="tickets__field tickets__field--available"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
-              <td>Эксклюзив от кутюрье</td>
-              <td>нет</td>
-              <td>нет</td>
-              <td>да</td>
+            <tr class="tickets__row">
+              <td class="tickets__field">Эксклюзив от кутюрье</td>
+              <td class="tickets__field"></td>
+              <td class="tickets__field"></td>
+              <td class="tickets__field tickets__field--available"></td>
             </tr>
-            <tr>
+            <tr class="tickets__row">
               <td></td>
-              <td><button>Купить</button></td>
-              <td><button>Купить</button></td>
-              <td><button>Купить</button></td>
+              <td><button class="button">Купить</button></td>
+              <td><button class="button button--violet">Купить</button></td>
+              <td><button class="button">Купить</button></td>
             </tr>
           </table>
         </div>  
@@ -321,7 +341,7 @@
               <label for="message">Cообщение</label>
               <input type="text" id="message" placeholder="Задайте любой вопрос">
             </div>
-            <button class="form__button" type="submit">Отправить</button>
+            <button class="form__button button" type="submit">Отправить</button>
           </form>
         </div> 
       </section>  
@@ -348,19 +368,19 @@
             </div>
             <div class="popup__reservation">
               <p class="popup__reserve-text">Бронь билета</p>
-              <button class="popup__reserve-button"></button>
+              <a class="popup__reserve-button button"></a>
             </div>
           </form>
         </div>
         <div class="popup-feedback">
           <button class="popup-feedback__button-close" type="button" aria-label="Закрыть форму"></button>
           <p class="popup-feedback__text-thanks">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
-          <button class="popup-feedback__button">Понятно</button>
+          <button class="popup-feedback__button button">Понятно</button>
         </div>
         <div class="popup-feedback">
           <button class="popup-feedback__button-close" type="button" aria-label="Закрыть форму"></button>
           <p class="popup-feedback__text-thanks">Спасибо за интерес к Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.Скоро сообщим о всех деталях.</p>
-          <button class="popup-feedback__button">Понятно</button>
+          <button class="popup-feedback__button button">Понятно</button>
         </div>
       </div>
     </main>
