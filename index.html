@@ -24,7 +24,7 @@
         <div class="main-header__switch-lang switch-lang">
           <button class="switch-lang__button">Рус</button>
           <ul class="switch-lang__list">
-            <li class="switch-lang__item">
+            <li class="switch-lang__item switch-lang__item--active">
               <input type="radio" name="lang" id="rus" value="рус" checked>
               <label for="rus">рус</label>
             </li>
@@ -40,32 +40,36 @@
       <section class="preview">
         <div class="preview__wrapper">
           <div class="preview__text-block">
-          <p class="preview__hashtag">#bladefashion2019</p>
-          <h1 class="preview__headline">Показ лучших молодых дизайнеров России</h1>
-          <ul class="preview__info-list info-list">
-            <li class="info-list__item info-list__item--time">18 ноября 12<sup>30</sup>-20<sup>00</sup></li>
-            <li class="info-list__item info-list__item--address">Москва Лофт-центр «Эдем»</li>
-            <li class="info-list__item info-list__item--winner">Победитель едет на показ Blade в Париж!</li>
-          </ul>
-          <div class="preview__ticket-reserve">
-            <div class="preview__ticket-reservation">
-              <a class="preview__ticket-reservation-link" href="#">Бронь билета</a>
-            </div>
-            <div class="preview__ticket-reservation-yellow">
-              <a class="preview__ticket-reservation-link-arrow" href="#"><span class="visually-hidden">Перейти</span></a>
-            </div> 
-          </div> 
-          <ul class="preview__social-list social-list">
-            <li class="social-list__item social-list__item--fb"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
-            </a></li>
-            <li class="social-list__item social-list__item--instagram"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Инстграмме</span>
-            </a></li>
-            <li class="social-list__item social-list__item--twitter"><a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
-          </ul>
+            <p class="preview__hashtag">#bladefashion2019</p>
+            <h1 class="preview__headline">Показ лучших молодых дизайнеров России</h1>
+            <ul class="preview__info-list info-list">
+              <li class="info-list__item info-list__item--time">18 ноября 12<sup>30</sup>-20<sup>00</sup></li>
+              <li class="info-list__item info-list__item--address">Москва Лофт-центр «Эдем»</li>
+              <li class="info-list__item info-list__item--winner">Победитель едет на показ Blade в Париж!</li>
+            </ul>
+            <a class="preview__button" href="#">Бронь билета</a>
+            <ul class="preview__social-list social-list">
+              <li class="social-list__item social-list__item--fb">
+                <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+              </li>
+              <li class="social-list__item social-list__item--instagram">
+                <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Инстграмме</span></a>
+              </li>
+              <li class="social-list__item social-list__item--twitter">
+                <a class="social-list__link" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+              </li>
+            </ul>
           </div>  
-          <div class="number">
-           <span class="number__item">01/</span>
-           <span class="number__item">05</span>
+          <div class="numbers">
+            <div class="numbers__count">
+              <span class="numbers__numeral numbers__numeral--active">01</span>
+              <span class="numbers__numeral">/</span>
+              <span class="numbers__numeral">05</span>
+            </div>
+            <div class="numbers__toggles">
+              <a class="numbers__toggle number__toggle--left" href="#participants"></a>
+              <a class="numbers__toggle number__toggle--right" aria-label="следующий блок"></a>
+            </div>
           </div>
         </div>  
         <div class="preview__image">
@@ -77,33 +81,37 @@
         </div>
       </section>
       <section class="participants">
-        <h2 class="participants__hedline">Участники</h2>
+        <h2 class="participants__headline headline">Участники</h2>
         <div class="participants__model model">
           <p class="model__text">Классика, нуар</p>
           <div class="model__photo">
-            <img src="http://placehold.it/50x50" alt="Модель №1">
+            <img class="model__img" src="img/model-1@1x.jpg" alt="Модель №1" width="448" height="580">
           </div>
           <div class="model__toggles toggles">
             <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
             <button class="toggles__arrow toggles__arrow--right" aria-label="Следущее фото"></button>
           </div>
           <div class="model__stylist stylist">
-            <div class="stylist__photo">
-              <img class="stylist__image" src="http://placehold.it/50x50" alt="Фото стилиста">
-            </div>
-            <h3 class="stylist__name">Дэвид Робинсон</h3>
-            <p class="stylist__bottom-text">CША</p>
-            <ul class="stylist__social-list social-list">
-              <li class="social-list__item social-list__item--instagram"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
-              <li class="social-list__item social-list__item--fb"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
-              <li class="social-list__item social-list__item--twitter"><a href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
-            </ul>
+            <div class="stylist__wrapper">
+              <div class="stylist__photo">
+                <img class="stylist__image" src="img/stylist-1@1x.png" alt="Фото стилиста">
+              </div>
+              <h3 class="stylist__name">Дэвид Робинсон</h3>
+              </div>
+            <div class="stylist__wrapper-bottom">
+              <p class="stylist__country">CША</p>
+              <ul class="stylist__social-list social-list">
+                <li class="social-list__item social-list__item--instagram"><a href="#" aria-label="Мы в инстаграм"></a></li>
+                <li class="social-list__item social-list__item--fb"><a href="#" aria-label="Мы на фейсбук"></a></li>
+                <li class="social-list__item social-list__item--twitter"><a href="#" aria-label="Мы  твиттере"></a></li>
+              </ul>
+            </div>  
           </div>
         </div>
         <div class="participants__model model">
           <p class="model__text">Авангард, импрессионизм</p>
           <div class="model__photo">
-            <img src="http://placehold.it/50x50" alt="Модель №2">
+            <img class="model__img" src="img/model-2@1x.jpg" alt="Модель №2" width="448" height="580">
           </div>
           <div class="model__toggles toggles">
             <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
@@ -111,10 +119,10 @@
           </div>
           <div class="model__stylist stylist">
             <div class="stylist__photo">
-              <img class="stylist__image" src="http://placehold.it/50x50" alt="Фото стилиста">
+              <img class="stylist__image" src="img/stylist-2@1x.png" alt="Фото стилиста">
             </div>
             <h3 class="stylist__name">Келли Макдональд</h3>
-            <p class="stylist__bottom-text">Ирландия</p>
+            <p class="stylist__country">Ирландия</p>
             <ul class="stylist__social-list social-list">
               <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
               <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
@@ -125,7 +133,7 @@
         <div class="participants__model model">
           <p class="model__text">Эклектика, эконтренд</p>
           <div class="model__photo">
-            <img src="http://placehold.it/50x50" alt="Модель №3">
+            <img class="model__img" src="img/model-3@1x.jpg" alt="Модель №3">
           </div>
           <div class="model__toggles toggles">
             <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
@@ -133,10 +141,10 @@
           </div>
           <div class="model__stylist stylist">
             <div class="stylist__photo">
-              <img class="stylist__image" src="http://placehold.it/50x50" alt="Фото стилиста">
+              <img class="stylist__image" src="img/stylist-3@1x.png" alt="Фото стилиста">
             </div>
             <h3 class="stylist__name">Костас Папаниколау</h3>
-            <p class="stylist__bottom-text">Греция</p>
+            <p class="stylist__country">Греция</p>
             <ul class="stylist__social-list social-list">
               <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
               <li class="social-list__item"><a href="#"><span class="visually-hidden"> Мы на фейсбук </span></a></li>
@@ -144,20 +152,21 @@
             </ul>
           </div>
         </div> 
-        <div class="number">
-          <span class="number__item">02/</span>
-          <span class="number__item">05</span>
+        <div class="numbers">
+          <span class="numbers__numeral">02/</span>
+          <span class="numbers__numeral">/</span>
+          <span class="numbers__numeral">05</span>
         </div>  
       </section>
       <section class="judges">
-        <h2 class="judges__headline">Судьи BFW`19</h2>
+        <h2 class="judges__headline headline">Судьи BFW`19</h2>
         <ul class="judges__items">
           <li class="judges__item">
             <div class="judges__photo">
-             <img class="judges__img" src="http://placehold.it/50x50" alt="">
+             <img class="judges__img" src="img/referee-1@1x.jpg" alt="Фото судьи">
             </div>
             <div class="judges__description">
-              <span class="">Литва</span>
+              <span class="judges__country">Литва</span>
               <h3 class="judges__name">Давис Бертанс</h3>
               <p class="judges__desc">Владелец модного дома в Литве. Судья показов young blood Vilnus.</p>
               <ul class="judges__social-list social-list">
@@ -168,10 +177,10 @@
           </li>
           <li class="judges__item">
             <div class="judges__photo">
-             <img class="judges__img" src="http://placehold.it/50x50" alt="">
+             <img class="judges__img" src="img/referee-2@1x.jpg" alt="Фото судьи">
             </div>
             <div class="judges__description">
-              <span class="">Россия</span>
+              <span class="judges__country">Россия</span>
               <h3 class="judges__name">Георгий Рубильников</h3>
               <p class="judges__desc">Дизайнер, работающий с Gucci, владелец салона в Санкт-Петербурге.</p>
               <ul class="judges__social-list social-list">
@@ -183,30 +192,44 @@
           </li>
           <li class="judges__item">
             <div class="judges__photo">
-             <img class="judges__img" src="http://placehold.it/50x50" alt="">
+             <img class="judges__img" src="img/referee-3@1x.jpg" alt="Фото судьи">
             </div>
             <div class="judges__description">
-              <span class="">Давид Гегенешвили</span>
+              <span class="judges__country">Грузия</span>
               <h3 class="judges__name">Давид Гегенешвили</h3>
               <p class="judges__desc">Создатель Georgia Runway Project. Главный судья на young blood Moscow.</p>
               <ul class="judges__social-list social-list">
-                <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы в истаграмме</span></a></li>
-                <li class="social-list__item"><a href="#"><span class="visually-hidden">Мы на фейсбук</span></a></li>
+                <li class="social-list__item"><a href="#" aria-label="Мы в инстаграмме"></a></li>
+                <li class="social-list__item"><a href="#" aria-label="Мы на фейсбук"></a></li>
               </ul>
            </div>
           </li>
         </ul>
-        <div class="number">
-          <span class="number__item">02/</span>
-          <span class="number__item">05</span>
+        <div class="numbers">
+          <span class="numbers__numeral">02/</span>
+          <span class="numbers__numeral">/</span>
+          <span class="numbers__numeral">05</span>
         </div> 
       </section>
       <section class="tickets">
-        <h2 class="tickets__headline">Билеты</h2>
+        <h2 class="tickets__headline headline">Билеты</h2>
         <div class="tickets__wrapper">
           <div class="tickets__column">
-            <p class="tickets_text">Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:</p>
-            <div class="tickets__logos"></div>
+            <p class="tickets__text">Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций)и произвести оплату онлайн. Мы принимаем оплату:</p>
+            <ul class="tickets__payments payments">
+              <li class="payments__item">
+                <img src="img/visa@1x.png" alt="visa"  width="47" height="15">
+              </li>
+              <li class="payments__item">
+                <img src="img/pay@1x.png" alt="pay" width="44" height="21">
+              </li>
+              <li class="payments__item">
+                <img src="img/master@1x.png" alt="mastercard" width="35" height="27">
+              </li>
+              <li class="payments__item">
+                <img src="img/paypal@1x.png" alt="paypal" width="59" height="14">
+              </li>
+            </ul>
             <p class="tickets__text">По всем вопросам, связанным с покупокой, возвратом или предлагаемыми опциями, вы можете обратиться к нашему консультанту по номеру:</p>
             <p class="tickets__phone">+7 (924) 456 78 90</p>
           </div>
@@ -264,7 +287,7 @@
       </section>
       <section class="contacts">
         <div class="contacts__column">
-          <h2 class="contacts__headline">Cвяжитесь с нами</h2>
+          <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
           <div class="contacts__address">
             <h3 class="contacts__title">Офис продаж</h3>
             <p class="contacts__text">363561, Москва ул. Пушкина 17/1</p>
@@ -284,19 +307,19 @@
           <div class="contacts__map"></div>
         </div>
         <div class="contacts__column">
-          <h3>Остались вопросы?Спросите нас! Мы ответим!</h3>
+          <p class="contacts__question">Остались вопросы? Спросите нас! Мы ответим!</p>
           <form action="URL" class="user-form">
             <div class="user-form__wrapper">
               <label for="name">Имя</label>
-              <input type="text" id="name">
+              <input type="text" id="name" placeholder="Введите имя">
             </div>
             <div class="user-form__wrapper">
               <label for="name">E-mail</label>
-              <input type="email" id="email">
+              <input type="email" id="email" placeholder="Введите e-mail">
             </div>  
             <div class="user-form__wrapper">
               <label for="message">Cообщение</label>
-              <input type="text" id="message">
+              <input type="text" id="message" placeholder="Задайте любой вопрос">
             </div>
             <button class="form__button" type="submit">Отправить</button>
           </form>
@@ -304,7 +327,7 @@
       </section>  
       <div class="overlay">
         <div class="popup">
-          <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вамипо вопросу оплаты.</p>
+          <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
           <form action="URL">
             <div class="popup__wrapper">
               <label for="name">Имя</label>
