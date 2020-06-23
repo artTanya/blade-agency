@@ -306,43 +306,49 @@
         </div>  
       </section>
       <section class="contacts">
-        <div class="contacts__column">
-          <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
-          <div class="contacts__address">
-            <h3 class="contacts__title">Офис продаж</h3>
-            <p class="contacts__text">363561, Москва ул. Пушкина 17/1</p>
+        <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
+        <div class="contacts__container">
+          <div class="contacts__column-left">
+            <div class="contacts__wrapper">
+              <div class="contacts__address">
+                <h3 class="contacts__title">Офис продаж</h3>
+                <p class="contacts__text">363561, Москва ул. Пушкина 17/1</p>
+              </div>
+              <div class="contacts__phone">
+                <h3 class="contacts__title">Для связи</h3>
+                <p class="contacts__text">+7 (924) 456 78 90 bfw@gmail.com</p>
+              </div>
+              <div class="contacts__social">
+                <h3 class="contacts__title">Подпишитесь</h3>
+                <ul class="contacts__social social">
+                  <li class="social__social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы на фейсбук</span></a></li>
+                  <li class="social-social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
+                  <li class="social__social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы в твиттере</span></a></li>
+                </ul>
+              </div>
+            </div>  
+            <div class="contacts__map">
+              <img src="img/map-desktop@1x.jpg" alt="Где нас найти" class="contacts__map-img">
+            </div>
           </div>
-          <div class="contacts__phone">
-            <h3 class="contacts__title">Для связи</h3>
-            <p class="contacts__text">+7 (924) 456 78 90 bfw@gmail.com</p>
-          </div>
-          <div class="contacts__social">
-            <h3 class="contacts__title">Подпишитесь</h3>
-            <ul class="contacts__social social">
-              <li class="social__social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы на фейсбук</span></a></li>
-              <li class="social-social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы в инстаграмме</span></a></li>
-              <li class="social__social-item"><a href="#" class="social__social-link"><span class="visually-hidden">Мы в твиттере</span></a></li>
-            </ul>
-          </div>
-          <div class="contacts__map"></div>
-        </div>
-        <div class="contacts__column">
+        <div class="contacts__column-right">
           <p class="contacts__question">Остались вопросы? Спросите нас! Мы ответим!</p>
           <form action="URL" class="user-form">
             <div class="user-form__wrapper">
-              <label for="name">Имя</label>
-              <input type="text" id="name" placeholder="Введите имя">
+              <label class="user-form__label" for="name">Имя</label>
+              <input class="user-form__input" type="text" id="name" placeholder="Введите имя">
             </div>
             <div class="user-form__wrapper">
-              <label for="name">E-mail</label>
-              <input type="email" id="email" placeholder="Введите e-mail">
+              <label class="user-form__label" for="name">E-mail</label>
+              <input class="user-form__input" type="email" id="email" placeholder="Введите e-mail">
             </div>  
             <div class="user-form__wrapper">
-              <label for="message">Cообщение</label>
-              <input type="text" id="message" placeholder="Задайте любой вопрос">
+              <label class="user-form__label" for="message">Cообщение</label>
+              <input class="user-form__input user-form__input--last" type="text" id="message" placeholder="Задайте любой вопрос">
             </div>
             <button class="form__button button" type="submit">Отправить</button>
-          </form>
+        </form>
+        </div>
         </div> 
       </section>  
       <div class="overlay">
@@ -350,12 +356,12 @@
           <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
           <form action="URL">
             <div class="popup__wrapper">
-              <label for="name">Имя</label>
-              <input type="text" id="popup-name">
+              <label class="popup__label" for="name">Имя</label>
+              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя">
             </div>
             <div class="popup__wrapper">
-              <label for="email">Email</label>
-              <input type="email" id="popup-email">
+              <label class="popup__label" for="email">Email</label>
+              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail">
             </div>
             <div class="popup__checkbox">
               <h4 class="popup__title">Статус билета</h4>
@@ -366,10 +372,7 @@
               <input type="checkbox" id="checkbox-3">
               <label for="checkbox-3">VIP</label>
             </div>
-            <div class="popup__reservation">
-              <p class="popup__reserve-text">Бронь билета</p>
-              <a class="popup__reserve-button button"></a>
-            </div>
+              <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
           </form>
         </div>
         <div class="popup-feedback">

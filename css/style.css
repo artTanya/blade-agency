@@ -249,7 +249,8 @@ label[for="eng"]::before {
   margin-bottom: 140px;
 }
 
-.preview__button {
+.preview__button,
+.popup__reserve-button {
   display: block;
   position: relative;
   width: 407px;
@@ -264,7 +265,8 @@ label[for="eng"]::before {
   margin-bottom: 140px;
 }
 
-.preview__button::after {
+.preview__button::after,
+.popup__reserve-button::after{
   content:"";
   position: absolute;
   top: 0;
@@ -504,6 +506,10 @@ label[for="eng"]::before {
   height: 19px;
 }
 
+.contacts__container {
+  display: flex;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 14px;
@@ -528,20 +534,46 @@ label[for="eng"]::before {
   font-size: 40px;
   line-height: 48px;
   color: #303030;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
-.user-form__wrapper {
-  width: 593px;
+.contacts__wrapper {
+  width: 599px;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.contacts__column-right {
+  width: 540px;
+}
+
+.contacts__column-left {
+  margin-right: 50px;
+}
+
+.contacts__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-form__wrapper,
+.popup__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
-.user-form__wrapper input {
+.user-form__input,
+.popup__input {
   border: none;
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid #afb4b9;
 }
 
-.user-form__wrapper label {
+.user-form__label,
+.popup__label,
+.popup__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
@@ -549,7 +581,18 @@ label[for="eng"]::before {
   text-transform: uppercase;
   color: #303030;
   opacity: 0.32;
+  margin-bottom: 15px;
 }
+
+.user-form__input{
+  padding-bottom: 20px;
+}
+
+.user-form__input--last {
+  padding-bottom: 60px;
+}
+
+
 .button {
   width: 192px;
   background-color: #ffffff;
@@ -569,4 +612,22 @@ label[for="eng"]::before {
   border: transparent;
   color: #ffffff;
   background-color: rgba(95, 75, 139, 0.87);
+}
+
+.popup__text,
+.popup-feedback__text-thanks {
+  width: 700px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #303030;
+}
+
+.popup__wrapper {
+  width: 540px;
+}
+
+.popup__reserve-button--shadow {
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
