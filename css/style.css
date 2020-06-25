@@ -304,18 +304,6 @@ label[for="eng"]::before {
   margin-bottom: 50px;
 }
 
-.social-list__item--fb {
-  background-image: url("../img/icon-fb.svg");
-}
-
-.social-list__item--instagram {
-  background-image: url("../img/icon-insta.svg");
-}
-
-.social-list__item--twitter {
-  background-image: url("../img/icon-twitter.svg");
-}
-
 .numbers__numeral {
   color: #ffffff;
 }
