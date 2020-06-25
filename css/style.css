@@ -334,21 +334,60 @@ label[for="eng"]::before {
   margin: 0;
   padding:0;
 }
+
 .participants-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  margin: 0;
+}
+
+.participants-list__model {
+  margin-right: 77px;
+}
+
+.participants-list__model:nth-child(3) {
+  margin: 0;
 }
 
 .model__img,
 .judges__img {
   display: block;
+  margin: 0;
+}
+
+.model__direction {
+  position: relative;
+  width: 29px;
+}
+
+.model__text {
+  position: absolute;
+  width: 397px;
+  height: 17px;
+  left: -220px; 
+  bottom: -230px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 2px;  
+  text-transform: uppercase;
+  color: #303030;
+  opacity: 0.32;
+  transform: rotate(-90deg);
+  margin: 0;
+  padding: 0;
 }
 
 .stylist {
   width: 420px;
-  min-height: 120px;
-  background-color: pink;
+  padding-top: 10px;
+  padding-bottom: 19px;
+  padding-left: 24px;
+  padding-right: 18px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
 .stylist__wrapper,
@@ -358,10 +397,17 @@ label[for="eng"]::before {
 }
 
 .stylist__wrapper-bottom {
+  padding-left: 76px;
+  width: 300px;
   justify-content: space-between;
 }
 
+.stylist__photo {
+  margin-right: 14px;
+ }
+
 .stylist__name {
+  width: 120px;
   font-size: 24px;
   line-height: 110%;
   letter-spacing: 0.03em;
@@ -379,7 +425,19 @@ label[for="eng"]::before {
   margin: 0;
 }
 
-.stylist__social-list .social-list__item {
+.social {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  width: 24px;
+  height:24px;
+}
+
+.stylist__social.social__item {
   margin-bottom: 0;
 }
 
@@ -388,13 +446,40 @@ label[for="eng"]::before {
   list-style: none;
 }
 
+.judges__item {
+  margin-right: 65px;
+}
+
+.judges__item:nth-child(3) {
+  margin-right: 0;
+}
+
+
+.judges__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.judges__info {
+  width: 455px;
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 26px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
 .judges__name {
+  width: 200px;
   font-weight: bold;
   font-size: 40px;
   line-height: 110%;
   letter-spacing: 0.03em;
   color: #303030; 
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .judges__desc {
@@ -403,6 +488,19 @@ label[for="eng"]::before {
   color: #303030;
   opacity: 0.64;
   margin: 0;
+  margin-bottom: 30px;
+}
+
+.judges__desc--first {
+  width: 330px;
+}
+
+.judges__desc--second {
+  width: 360px;
+}
+
+.judges__desc--third {
+  width: 370px;
 }
 
 .judges__country {
@@ -431,6 +529,11 @@ label[for="eng"]::before {
 .tickets__column {
   width: 480px;
   margin-right: 100px;
+}
+
+.judges__social {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .tickets__table {
@@ -630,4 +733,18 @@ label[for="eng"]::before {
 
 .popup__reserve-button--shadow {
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.popup__radio-boxes input {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 1px solid #d0d7dd;  
+  border-radius: 2px
+}
+
+.popup__radio-boxes input:checked {
+  background:rgba(95, 75, 139, 0.87);
+  border-radius: 2px;
+
 }
