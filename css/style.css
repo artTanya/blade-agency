@@ -332,8 +332,12 @@ label[for="eng"]::before {
   color: #1c1515;
   opacity: 0.87; 
   margin: 0;
-  padding:0;
+  padding: 0;
 }
+
+.participants__headline {
+  margin-bottom: 40px;  
+} 
 
 .participants-list {
   list-style: none;
@@ -380,7 +384,14 @@ label[for="eng"]::before {
   padding: 0;
 }
 
+.model__photo--second {
+  margin-top: 45px;
+}
+
 .stylist {
+  position: relative;
+  top: -50px;
+  left: -20px;
   width: 420px;
   padding-top: 10px;
   padding-bottom: 19px;
@@ -404,6 +415,10 @@ label[for="eng"]::before {
 
 .stylist__photo {
   margin-right: 14px;
+ }
+
+ .stylist__photo--second {
+   margin-top: 45px;
  }
 
 .stylist__name {
