@@ -199,6 +199,7 @@ label[for="eng"]::before {
 .preview__text-block {
   padding-left: 105px;
 }
+
 .preview__hashtag {
   font-size: 24px;
   line-height: 29px;
@@ -321,7 +322,7 @@ label[for="eng"]::before {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  margin-bottom: 50px;
+  margin-right: 20px;
 }
 
 .numbers__numeral {
