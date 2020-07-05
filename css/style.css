@@ -9,6 +9,38 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/playfair-display-black.woff2") format("woff2"), url("../fonts/playfair-display-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/playfair-display-bold.woff2"), url("../fonts/playfair-display-bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -44,7 +76,7 @@ textarea {
   height: 145px;
 }
 
-.main-nav{
+.main-nav {
   width: 740px;
   display: flex;
   justify-content: space-around;
@@ -585,7 +617,7 @@ label[for="eng"]::before {
 
 
 .headline {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 72px;
   line-height: 91px;
   letter-spacing: 0.03em;
@@ -945,6 +977,7 @@ label[for="eng"]::before {
   color: #303030;
   opacity: 0.32;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .contacts__text {
@@ -982,6 +1015,12 @@ label[for="eng"]::before {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social-list {
+  width: 88px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .popup {
