@@ -260,6 +260,17 @@ label[for="eng"]::before {
   display: block;
 }
 
+.preview__img::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background: linear-gradient(298.69deg, #332e2e 13.32%, rgba(77, 77, 77, 0) 46.28%);
+  opacity: 0.5;
+  z-index: 2;
+}
+
 .info-list {
   width: 843px;
   display: flex;
@@ -792,13 +803,23 @@ label[for="eng"]::before {
 }
 
 .judges__item {
+  position: relative;
+  z-index: 1;
+  width: 454px;
   margin-right: 65px;
 }
 
+.judge__item::after {
+  width: 454px;
+  height: 552px;
+  top: 81px;
+  left: 15px;
+  border: 4px solid rgba(245, 208, 111, 0.54);
+}
+s
 .judges__item:nth-child(3) {
   margin-right: 0;
 }
-
 
 .judges__wrapper {
   display: flex;
@@ -968,6 +989,10 @@ label[for="eng"]::before {
   display: flex;
 }
 
+.contacts__map {
+  margin-right: 135px;
+}
+
 .contacts__title {
   font-weight: bold;
   font-size: 14px;
@@ -978,6 +1003,11 @@ label[for="eng"]::before {
   opacity: 0.32;
   margin: 0;
   margin-bottom: 25px;
+}
+
+.contacts__headline {
+  margin-bottom: 90px;
+
 }
 
 .contacts__text {
@@ -994,7 +1024,7 @@ label[for="eng"]::before {
   line-height: 48px;
   color: #303030;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
 }
 
 .contacts__wrapper {
