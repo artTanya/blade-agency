@@ -639,18 +639,22 @@ label[for="eng"]::before {
 } 
 
 .participants__participants-list {
+  width: 1707px; 
   position: relative;
+  padding-left: 115px;
+  padding-right: 85px;
+  box-sizing: border-box;
 }
 
 .participants__participants-list::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 35%;
   display: block;
   background-image: url("../img/arrow-left.svg");
   background-repeat: no-repeat;
-  width: 32px;
+  width: 40px;
   height: 64px;
 }
 
@@ -658,11 +662,11 @@ label[for="eng"]::before {
   content: "";
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 35%;
   display: block;
   background-image: url("../img/arrow-right.svg");
   background-repeat: no-repeat;
-  width: 32px;
+  width: 40px;
   height: 64px;
 }
 
@@ -670,6 +674,7 @@ label[for="eng"]::before {
   list-style: none;
   display: flex;
   margin: 0;
+
 }
 
 .participants-list__model {
@@ -789,8 +794,38 @@ label[for="eng"]::before {
 }
 
 .judges__items {
+  width: 1705px;
+  position: relative;
   display: flex;
   list-style: none;
+  margin: 0;
+  padding-left: 97px;
+  box-sizing: border-box;
+}
+
+.judges__items::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 64px;
+  position: absolute;
+  top:45%;
+  left: 0;
+  background-image: url("../img/arrow-left.svg");
+  background-repeat: no-repeat;
+}
+
+.judges__items::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 64px;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  margin-right: 10px;
 }
 
 .judges__item {
