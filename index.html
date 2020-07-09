@@ -525,14 +525,15 @@
       <div class="overlay">
         <div class="popup">
           <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
+          <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
           <form action="URL">
             <div class="popup__wrapper">
               <label class="popup__label" for="name">Имя</label>
-              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя">
+              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
             </div>
             <div class="popup__wrapper">
               <label class="popup__label" for="email">Email</label>
-              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail">
+              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
             </div>
             <div class="popup__radio-boxes">
               <h4 class="popup__title">Статус билета</h4>
@@ -547,12 +548,12 @@
           </form>
         </div>
         <div class="popup-feedback">
-          <button class="popup-feedback__button-close" type="button" aria-label="Закрыть форму"></button>
+          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
           <p class="popup-feedback__text-thanks">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
           <button class="popup-feedback__button button">Понятно</button>
         </div>
         <div class="popup-feedback">
-          <button class="popup-feedback__button-close" type="button" aria-label="Закрыть форму"></button>
+          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
           <p class="popup-feedback__text-thanks">Спасибо за интерес к Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.Скоро сообщим о всех деталях.</p>
           <button class="popup-feedback__button button">Понятно</button>
         </div>

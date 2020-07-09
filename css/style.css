@@ -520,12 +520,13 @@ label[for="eng"]::before {
   border-right: 1px solid #f2c03f;
 }
 
-.number--participants {
+.number.number--participants {
   position: relative;
   bottom: 100px;
-  left:0;
+  left: 0;
   top: -300px;
 }
+
 
 .toggles {
   width: 42px;
@@ -1230,5 +1231,69 @@ label[for="eng"]::before {
 .popup__radio-boxes input:checked {
   background:rgba(95, 75, 139, 0.87);
   border-radius: 50%;
+  background-image: url("../img/mark-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 
+}
+/* .btn-close::after,
+.btn-close::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #7965ad;
+} */
+
+.btn-close {
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  color: inherit;
+  position: absolute;
+  right: 51px;
+  top: 51px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+}
+
+.btn-close::after,
+.btn-close::before {
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  
+}
+
+.btn-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup-feedback {
+  position: relative;
+  margin-bottom: 100px;
+
+}
+
+.popup-feedback::before {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #7965ad;
+  background-image: url("../img/mark-big.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
