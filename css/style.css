@@ -1168,6 +1168,13 @@ label[for="eng"]::before {
   margin-bottom: 15px;
 }
 
+.user-form__textarea {
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #afb4b9;
+  padding-bottom: 60px;
+}
+
 .popup__radio-boxes {
   margin-bottom: 47px;
 }
