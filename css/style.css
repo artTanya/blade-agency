@@ -1096,7 +1096,6 @@ label[for="eng"]::before {
 }
 
 .contacts__wrapper {
-  width: 599px;
   display: flex;
   margin-bottom: 70px;
 }
@@ -1130,6 +1129,28 @@ label[for="eng"]::before {
   left: 25px; 
   z-index: -1;
   box-sizing: border-box;
+}
+
+.contacts__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__link a {
+  text-decoration: none;
+  color:  #303030;
+}
+
+.contacts__link--dashed {
+  text-decoration: underline dashed;
+}
+
+.contacts__address,
+.contacts__phone,
+.contacts__social {
+  width: 155px;
+  margin-right: 70px;
 }
 
 .social-list {
@@ -1257,13 +1278,13 @@ label[for="eng"]::before {
   border: 0;
   cursor: pointer;
   outline: 0;
-  color: inherit;
+  color: black;
   position: absolute;
   right: 51px;
   top: 51px;
   width: 22px;
   height: 22px;
-  background-color: transparent;
+  background-color: red;
 }
 
 .btn-close::after,
@@ -1290,7 +1311,7 @@ label[for="eng"]::before {
 
 }
 
-.popup-feedback::before {
+.popup-feedback__thanks::before {
   position: absolute;
   top: -80px;
   left: 0;
@@ -1304,3 +1325,17 @@ label[for="eng"]::before {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* .popup-feedback__thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100vw, -50%);
+  width: 880px;
+  background-color: #ffffff;
+  z-index: 6;
+  padding: 48px 134px 47px 40px;
+  display: none;
+  min-height: 434px;
+  transform-origin: center;
+} */

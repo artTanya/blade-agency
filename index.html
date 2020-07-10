@@ -386,7 +386,7 @@
               </li>
             </ul>
             <p class="tickets__text">По всем вопросам, связанным с покупокой, возвратом или предлагаемыми опциями, вы можете обратиться к нашему консультанту по номеру:</p>
-            <p class="tickets__phone">+7 (924) 456 78 90</p>
+            <a href="tel:89244567890" class="tickets__phone">+7 (924) 456 78 90</a>
           </div>
           <table class="tickets__table">
             <tr>
@@ -456,7 +456,36 @@
               <td><button class="button">Купить</button></td>
             </tr>
           </table>
-        </div>  
+        </div>
+        <div class="popup">
+          <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
+          <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
+          <form class="popup__form form form--tickets" action="#" name="tickets" method="post">
+            <div class="popup__wrapper">
+              <label class="popup__label" for="name">Имя</label>
+              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
+              <div class="form__invalid">
+                <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
+              </div>
+            </div>
+            <div class="popup__wrapper">
+              <label class="popup__label" for="email">Email</label>
+              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
+              <div class="form__invalid">
+                <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
+              </div>
+            </div>
+            <div class="popup__radio-boxes">
+              <h4 class="popup__title">Статус билета</h4>
+              <input type="radio" id="radio-1" name="status" value="1">
+              <label for="radio-1">Зритель</label>
+              <input type="radio" id="radio-2" name="status" value="2">
+              <label for="radio-2">Оптиум</label>
+              <input type="radio" id="radio-3" name="status" value="3" checked>
+              <label for="radio-3">VIP</label>
+            </div>
+              <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
+          </form>  
       </section>
       <section class="contacts">
         <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
@@ -469,7 +498,14 @@
               </div>
               <div class="contacts__phone">
                 <h3 class="contacts__title">Для связи</h3>
-                <p class="contacts__text">+7 (924) 456 78 90 bfw@gmail.com</p>
+                <ul class="contacts__links">
+                  <li class="contacts__link">
+                    <a href="tel:89244567890">+7 (924) 456 78 90</a>
+                  </li>
+                  <li class="contacts__link contacts__link--dashed">
+                    <a href="mailto:bfw@gmail.com">bfw@gmail.com</a>
+                  </li>
+                </ul>
               </div>
               <div class="contacts__social">
                 <h3 class="contacts__title">Подпишитесь</h3>
@@ -504,7 +540,7 @@
           </div>
           <div class="contacts__column-right">
             <p class="contacts__question">Остались вопросы? Спросите нас! Мы ответим!</p>
-            <form action="URL" class="user-form">
+            <form action="URL" class="user-form" method="post">
               <div class="user-form__wrapper">
                 <label class="user-form__label" for="name">Имя</label>
                 <input class="user-form__input" type="text" id="name" placeholder="Введите имя">
@@ -521,43 +557,15 @@
             </form>
           </div>
         </div> 
+        <div class="popup-feedback__thanks">
+          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
+          <div class="popup-feedback__thanks-container">
+            <p class="popup-feedback__text-thanks">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
+            <button class="popup-feedback__button button">Понятно</button>
+          </div>
+        </div>
       </section>  
-      <div class="overlay">
-        <div class="popup">
-          <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
-          <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
-          <form action="URL">
-            <div class="popup__wrapper">
-              <label class="popup__label" for="name">Имя</label>
-              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
-            </div>
-            <div class="popup__wrapper">
-              <label class="popup__label" for="email">Email</label>
-              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
-            </div>
-            <div class="popup__radio-boxes">
-              <h4 class="popup__title">Статус билета</h4>
-              <input type="radio" id="radio-1" name="status" value="1">
-              <label for="radio-1">Зритель</label>
-              <input type="radio" id="radio-2" name="status" value="2">
-              <label for="radio-2">Оптиум</label>
-              <input type="radio" id="radio-3" name="status" value="3" checked>
-              <label for="radio-3">VIP</label>
-            </div>
-              <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
-          </form>
-        </div>
-        <div class="popup-feedback">
-          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
-          <p class="popup-feedback__text-thanks">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
-          <button class="popup-feedback__button button">Понятно</button>
-        </div>
-        <div class="popup-feedback">
-          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
-          <p class="popup-feedback__text-thanks">Спасибо за интерес к Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.Скоро сообщим о всех деталях.</p>
-          <button class="popup-feedback__button button">Понятно</button>
-        </div>
-      </div>
+      <div class="overlay"></div>
     </main>
   </body>
 </html>  
