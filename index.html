@@ -19,11 +19,11 @@
           </a>
         </div>  
         <ul class="main-header__main-nav main-nav">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Участники</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Жюри</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Билеты</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          <li class="main-nav__item"><a href="#preview" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#participants" class="main-nav__link">Участники</a></li>
+          <li class="main-nav__item"><a href="#judges" class="main-nav__link">Жюри</a></li>
+          <li class="main-nav__item"><a href="#tickets" class="main-nav__link">Билеты</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
         </ul>
         <div class="main-header__switch-lang switch-lang">
           <button class="switch-lang__button">Рус</button>
@@ -100,6 +100,7 @@
       </section>
       <section class="participants">
         <h2 class="participants__headline headline">Участники</h2>
+        <button class="slider__slider-toggle slider__slider-toggle--left slider-toggle slider-toggle--left" type="button"></button>
         <ul class="participants__participants-list participants-list">
           <li class="participants-list__model model">
             <div class="model__direction">
@@ -239,7 +240,8 @@
               </div>  
             </div>
           </li>
-        </ul> 
+        </ul>
+        <button class="slider__slider-toggle slider__slider-toggle--right slider-toggle slider-toggle--right" type="button"></button> 
         <div class="number number--participants">
           <div class="number__wrapper">
             <div class="number__count">
@@ -256,6 +258,7 @@
       </section>
       <section class="judges">
         <h2 class="judges__headline headline">Судьи BFW`19</h2>
+        <button class="slider__slider-toggle slider__slider-toggle--left slider-toggle slider-toggle--left" type="button" aria-label="предыдущий слайд"></button>
         <ul class="judges__items">
           <li class="judges__item">
             <div class="judges__border"></div>
@@ -352,6 +355,7 @@
            </div>
           </li>
         </ul>
+        <button class="slider__slider-toggle slider__slider-toggle--right slider-toggle slider-toggle--right" type="button" aria-label="следующий слайд"></button>
         <!-- <div class="number number--judges">
           <div class="number__wrapper">
             <div class="number__count">
@@ -451,9 +455,9 @@
             </tr>
             <tr class="tickets__row tickets__row--large">
               <td></td>
-              <td><button class="button">Купить</button></td>
-              <td><button class="button button--violet">Купить</button></td>
-              <td><button class="button">Купить</button></td>
+              <td><button class="tickets__button button">Купить</button></td>
+              <td><button class="tickets__button button button--violet">Купить</button></td>
+              <td><button class="tickets__button button">Купить</button></td>
             </tr>
           </table>
         </div>
@@ -464,14 +468,14 @@
             <div class="popup__wrapper">
               <label class="popup__label" for="name">Имя</label>
               <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
-              <div class="form__invalid">
+              <div class="popup__invalid">
                 <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
               </div>
             </div>
             <div class="popup__wrapper">
               <label class="popup__label" for="email">Email</label>
               <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
-              <div class="form__invalid">
+              <div class="popup__invalid">
                 <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
               </div>
             </div>
@@ -485,7 +489,13 @@
               <label for="radio-3">VIP</label>
             </div>
               <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
-          </form>  
+          </form>
+          <div class="popup__thanks">
+            <div class="popup__text">
+              <p>Спасибо за интерес к Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.<br>Скоро сообщим о всех деталях.</p>
+            </div>
+            <button class="popup__thanks-btn button" type="button">Понятно</button>
+          </div>  
       </section>
       <section class="contacts">
         <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
@@ -540,7 +550,7 @@
           </div>
           <div class="contacts__column-right">
             <p class="contacts__question">Остались вопросы? Спросите нас! Мы ответим!</p>
-            <form action="URL" class="user-form" method="post">
+            <form action="URL" class="contacts__user-form user-form" method="post">
               <div class="user-form__wrapper">
                 <label class="user-form__label" for="name">Имя</label>
                 <input class="user-form__input" type="text" id="name" placeholder="Введите имя">
@@ -553,15 +563,15 @@
                 <label class="user-form__label" for="message">Cообщение</label>
                 <textarea class="user-form__textarea" id="feedback-message" required placeholder="Задайте любой вопрос"></textarea>
               </div>
-              <button class="form__button button" type="submit">Отправить</button>
+              <button class="user-form__button button" type="submit">Отправить</button>
             </form>
           </div>
         </div> 
-        <div class="popup-feedback__thanks">
-          <button class="popup-feedback__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
-          <div class="popup-feedback__thanks-container">
-            <p class="popup-feedback__text-thanks">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
-            <button class="popup-feedback__button button">Понятно</button>
+        <div class="contacts__feedback-thanks feedback-thanks">
+          <button class="feedback-thanks__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
+          <div class="feedback-thanks__thanks-container">
+            <p class="feedback-thanks__text">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
+            <button class="feedback-thanks__button button">Понятно</button>
           </div>
         </div>
       </section>  
