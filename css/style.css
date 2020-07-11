@@ -231,23 +231,25 @@ label[for="eng"]::before {
 
 .preview__img {
   display: block;
+  position: relative;
+  right:230px;
+  top: 17px;
 }
 
 .preview__image {
   position: relative;
+  margin-top: 27px;
+
 }
 
-.preview__image::after {
-  content: "";
+.preview__image {
   display: block;
-  position: absolute;
-  left: 220px;
-  top: -27px;
   border: 10px solid #f2c03f;
   box-sizing: border-box;
   width: 645px;
   height: 878px;
-  z-index: 0;
+  box-sizing: border-box;
+
 }
 
 .info-list {
