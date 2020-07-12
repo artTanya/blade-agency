@@ -28,16 +28,22 @@ textarea {
 }
 
 .main-header {
+  position:fixed;
+  /* top: 0;
+  left: 0; */
   background-color:#7965ad;
   margin: 0;
+  z-index: 5; 
+  width: 100%;
 }
 
 .main-header__content-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 1800px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px; 
+  padding-left: 40px;
+  padding-right: 4.2%;
 }
 
 .main-header__logo {
@@ -47,6 +53,11 @@ textarea {
   background-color: #ffffff;
   width: 260px;
   height: 145px;
+}
+
+
+.main-header__hashtag {
+  display: none;
 }
 
 .main-nav {
@@ -60,8 +71,32 @@ textarea {
 }
 
 .main-nav__link {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  padding: 0 15px 4px;
+  cursor: pointer;
+}
+
+.main-nav__link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 16px;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.main-nav__link:hover::after,
+.main-nav__link:active::after {
+  background-color: #f2c03f;
 }
 
 .switch-lang {
