@@ -44,6 +44,12 @@ textarea {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 4.2%;
+  margin-right: auto;
+}
+
+.main-header__title {
+  display: flex;
+  align-items: center;
 }
 
 .main-header__logo {
@@ -55,9 +61,20 @@ textarea {
   height: 145px;
 }
 
+.hashtag {   
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f7bf2f;
+  opacity: 0.87;
+}
 
 .main-header__hashtag {
-  display: none;
+  opacity: 0;
 }
 
 .main-nav {
@@ -65,6 +82,7 @@ textarea {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -219,19 +237,10 @@ label[for="eng"]::before {
 }
 
 .preview__wrapper {
+  display: flex;
   position: relative;
   width: 100%;
   padding: 305px 10px 48px 40px;
-  max-width: 1920px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.preview__wrapper {
-  position: relative;
-  width: 100%;
-  padding: 165px 10px 48px 40px;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -249,7 +258,7 @@ label[for="eng"]::before {
 }
 
 .preview__headline {
-  width: 920px;
+  width: 100%;
   font-weight: 700;
   font-size: 72px;
   line-height: 79px;
@@ -268,7 +277,8 @@ label[for="eng"]::before {
   display: block;
   position: relative;
   right:230px;
-  top: 17px;
+  /* top: 17px; */
+  bottom: 0;
 }
 
 .preview__image {
@@ -288,6 +298,7 @@ label[for="eng"]::before {
 }
 
 .info-list {
+  width: 100%;
   display: flex;
   margin: 0;
   padding: 0;
@@ -301,7 +312,11 @@ label[for="eng"]::before {
   color: #ffffff;
   padding-right: 32px;
   padding-left: 104px;
+  opacity: 0.74;
+}
 
+.info-list__item p {
+  margin: 0;
 }
 
 .info-list__item::after {
@@ -318,6 +333,10 @@ label[for="eng"]::before {
   height: 44px;
 }
 
+.info-list__item--time {
+  padding-left: 57px;
+}
+
 .info-list__item--time::after {
   background-image: url("../img/calendar.svg");
   left: 0;
@@ -326,6 +345,7 @@ label[for="eng"]::before {
 .info-list__item--address::after {
   background-image: url("../img/location.svg");
 }
+
 
 .info-list__item--winner::after {
   background-image: url("../img/present.svg");
@@ -394,6 +414,10 @@ label[for="eng"]::before {
 
 .social-list__link {
   text-decoration: none;
+}
+
+.social-list__link:hover svg {
+  fill:red;
 }
 
 .social-list__item {
@@ -702,6 +726,7 @@ label[for="eng"]::before {
 
 .slider-toggle--left::after {
   left: 17px;
+  top:50%;
   transform: translateY(-50%) rotate(-45deg);
   border-left: 2px solid #303030;
 }
@@ -745,6 +770,7 @@ label[for="eng"]::before {
 .participants {
   width: 1920px;
   margin: 0 auto;
+  padding: 173px 77px 25px 69px;
 }
 
 .participants__headline {
@@ -804,6 +830,10 @@ label[for="eng"]::before {
   transform: rotate(-90deg);
   margin: 0;
   padding: 0;
+}
+
+.model__text--avangard {
+  bottom: -280px;  
 }
 
 .model__photo--second {
@@ -888,6 +918,7 @@ label[for="eng"]::before {
 .judges {
   width: 1920px;
   margin: 0 auto;
+  padding: 173px 77px 25px 69px;
 }
 
 .judges__items {
@@ -993,8 +1024,11 @@ label[for="eng"]::before {
 }
 
 .tickets {
-  max-width: 1920px;
-  margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 194px 24px 312px 7.45%;
 }
 
 .tickets__headline {
@@ -1032,7 +1066,7 @@ label[for="eng"]::before {
   border-collapse: collapse;
 }
 
-.tickets__row:nth-child(2n) {
+.tickets__row:nth-child(odd) {
   background: rgba(242, 192, 63, 0.1);
 } 
 
@@ -1049,6 +1083,10 @@ label[for="eng"]::before {
   margin: 0;
 }
 
+.tickets__phone:hover {
+  color: rgb(12, 79, 252);
+}
+
 .tickets__title {
   font-weight: bold;
   font-size: 14px;
@@ -1056,6 +1094,7 @@ label[for="eng"]::before {
   text-align: center;
   letter-spacing: 0.5px;
   color: #323C47;
+  border: none;
 }
 
 .tickets__field {
@@ -1104,8 +1143,11 @@ label[for="eng"]::before {
 }
 
 .contacts {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 190px 24px 84px 7.45%;
+  position: relative;
 }
 
 .contacts__container {
@@ -1148,12 +1190,12 @@ label[for="eng"]::before {
   line-height: 48px;
   color: #303030;
   margin: 0;
-  margin-bottom: 110px;
+  margin-bottom: 60px;
 }
 
 .contacts__wrapper {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .contacts__column-right {
@@ -1187,24 +1229,24 @@ label[for="eng"]::before {
   box-sizing: border-box;
 }
 
-.contacts__links {
+.contacts__items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.contacts__link a {
+.contacts__link  {
   text-decoration: none;
   color:  #303030;
 }
 
 .contacts__link--dashed {
-  text-decoration: underline dashed;
+  border-bottom: 1px dashed #303030;
 }
 
-.contacts__link--dashed a:hover {
-  text-decoration: none;
-  color: #0c4ffc;
+.contacts__link:hover {
+  color:  #0c4ffc;
+  border: none;
 }
 
 .contacts__address,
@@ -1222,6 +1264,7 @@ label[for="eng"]::before {
 
 .popup {
   margin: 0 auto;
+  display: none;
 }
 
 .user-form__wrapper,
@@ -1289,10 +1332,13 @@ label[for="eng"]::before {
   border: transparent;
   color: #ffffff;
   background-color: rgba(95, 75, 139, 0.87);
+  border-color: rgba(95, 75, 139, 0.87);
 }
 
-.tickets__button:hover {
+.button:hover {
   background-color: #f2c03f;
+  border-color: #f2c03f;
+  color: #ffffff;
 }
 
 .feedback-thanks__text,
@@ -1345,8 +1391,10 @@ label[for="eng"]::before {
   border: 0;
   cursor: pointer;
   outline: 0;
-  color: black;
+  color: inherit;
   position: absolute;
+  right: 51px;
+  top: 51px;
   width: 22px;
   height: 22px;
   background-color: red;
@@ -1422,4 +1470,8 @@ label[for="eng"]::before {
 .feedback-thanks__btn-close {
   top: -60px;
   right: 0;
+}
+
+.feedback-thanks {
+  display: none;
 }
