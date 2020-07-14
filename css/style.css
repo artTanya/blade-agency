@@ -40,11 +40,12 @@ textarea {
 .main-header__content-wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 1920px;
+  align-items: center;
+  width: 1920px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 4.2%;
-  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .main-header__title {
@@ -135,6 +136,10 @@ textarea {
   outline: none;
 }
 
+.switch-lang__button:hover {
+  color: #f2c03f;
+}
+
 .switch-lang__button::after {
   content: "";
   display: block;
@@ -142,13 +147,14 @@ textarea {
   height: 6px;
   position: absolute;
   right: -10px;
-  top: 10px;
+  top: 7px;
   background-image: url("../img/triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .switch-lang__list {
+  display: none;
   width: 112px;
   height: 92px;
   list-style: none;
@@ -246,6 +252,7 @@ label[for="eng"]::before {
 }
 
 .preview__text-block {
+  width: 997px;
   padding-left: 105px;
 }
 
@@ -696,6 +703,26 @@ label[for="eng"]::before {
   border-top: 2px solid #f2c03f;
 }
 
+.slider__wrapper {
+  /* width: 100%; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1700px;
+  margin: 0 0 0 auto;
+  padding: 0 71px;
+}
+
+.slider__slider-toggle {
+  position: absolute;
+  top: 40.5%;
+  transform: translateY(-50%);
+}
+
+.slider__slider-toggle--left {
+  left: 0;
+}
+
 .slider-toggle {
   padding: 0;
   background: 0 0;
@@ -715,7 +742,7 @@ label[for="eng"]::before {
   display: block;
   position: absolute;
   content: "";
-  top: 50%;
+  top:50%;
   width: 80px;
   height: 80px;
   background-color: transparent;
@@ -726,7 +753,6 @@ label[for="eng"]::before {
 
 .slider-toggle--left::after {
   left: 17px;
-  top:50%;
   transform: translateY(-50%) rotate(-45deg);
   border-left: 2px solid #303030;
 }
@@ -771,6 +797,7 @@ label[for="eng"]::before {
   width: 1920px;
   margin: 0 auto;
   padding: 173px 77px 25px 69px;
+  box-sizing: border-box;
 }
 
 .participants__headline {
@@ -778,10 +805,10 @@ label[for="eng"]::before {
 } 
 
 .participants__participants-list {
-  width: 1707px; 
+  width: 1700px; 
   position: relative;
-  padding-left: 115px;
-  padding-right: 85px;
+  /* padding-left: 115px;
+  padding-right: 85px; */
   box-sizing: border-box;
 }
 
@@ -790,6 +817,7 @@ label[for="eng"]::before {
   list-style: none;
   display: flex;
   margin: 0;
+  padding: 0;
 
 }
 
@@ -922,12 +950,12 @@ label[for="eng"]::before {
 }
 
 .judges__items {
-  width: 1705px;
+  width: 1700px;
   position: relative;
   display: flex;
   list-style: none;
   margin: 0;
-  padding-left: 97px;
+  padding: 0;
   box-sizing: border-box;
 }
 
