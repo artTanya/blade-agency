@@ -20,31 +20,33 @@
             </a>
           </div>  
           <a href="#" class="main-header__hashtag hashtag">#bladefashion2019</a>
-        </div>  
-        <ul class="main-header__main-nav main-nav">
-          <li class="main-nav__item"><a href="#preview" class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="#participants" class="main-nav__link">Участники</a></li>
-          <li class="main-nav__item"><a href="#judges" class="main-nav__link">Жюри</a></li>
-          <li class="main-nav__item"><a href="#tickets" class="main-nav__link">Билеты</a></li>
-          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
-        </ul>
-        <div class="main-header__switch-lang switch-lang">
-          <button class="switch-lang__button" type="button">Рус</button>
-          <ul class="switch-lang__list">
-            <li class="switch-lang__item switch-lang__item--active">
-              <input type="radio" name="lang" id="rus" value="рус" checked>
-              <label for="rus">рус</label>
-            </li>
-            <li class="switch-lang__item">
-              <input type="radio" name="lang" id="eng" value="англ">
-              <label for="eng">англ</label>
-            </li>
+        </div> 
+        <div class="main-header__wrapper"> 
+          <ul class="main-header__main-nav main-nav">
+            <li class="main-nav__item"><a href="#preview" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="#participants" class="main-nav__link">Участники</a></li>
+            <li class="main-nav__item"><a href="#judges" class="main-nav__link">Жюри</a></li>
+            <li class="main-nav__item"><a href="#tickets" class="main-nav__link">Билеты</a></li>
+            <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
           </ul>
-        </div>
+          <div class="main-header__switch-lang switch-lang">
+            <button class="switch-lang__button" type="button">Рус</button>
+            <ul class="switch-lang__list">
+              <li class="switch-lang__item switch-lang__item--active">
+                <input type="radio" name="lang" id="rus" value="рус" checked>
+                <label for="rus">рус</label>
+              </li>
+              <li class="switch-lang__item">
+                <input type="radio" name="lang" id="eng" value="англ">
+                <label for="eng">англ</label>
+              </li>
+            </ul>
+          </div>
+        </div>  
       </div>
     </header>
     <main class="main">
-      <section class="preview">
+      <section class="preview" id="preview">
         <div class="preview__wrapper">
           <div class="preview__text-block">
             <p class="preview__hashtag hashtag">#bladefashion2019</p>
@@ -54,7 +56,7 @@
               <li class="info-list__item info-list__item--address"><p>Москва Лофт-центр «Эдем»</p></li>
               <li class="info-list__item info-list__item--winner"><p>Победитель едет на показ Blade в Париж!</p></li>
             </ul>
-            <a class="preview__button" href="#">Бронь билета</a>
+            <a class="preview__button" href="#tickets">Бронь билета</a>
             <ul class="preview__social-list social-list">
               <li class="social-list__item social-list__item--fb">
                 <a class="social-list__link" href="#" aria-label="Мы в Фейсбуке">
@@ -96,12 +98,12 @@
         <div class="preview__image">
           <img class="preview__img" src="img/main-background-desktop@1x.png" alt="Фото модели">
         </div>
-        <div class="preview__toggles toggles toggles--model">
+        <div class="preview__toggles toggles">
           <button class="toggles__arrow toggles__arrow--left" type="button" aria-label="Предыдущий"></button>
           <button class="toggles__arrow toggles__arrow--right" type="button" aria-label="Следующий"></button>
         </div>
       </section>
-      <section class="participants">
+      <section class="participants" id="participants">
         <h2 class="participants__headline headline">Участники</h2>
         <div class="slider__wrapper">
           <button class="slider__slider-toggle slider__slider-toggle--left slider-toggle slider-toggle--left" type="button"></button>
@@ -113,7 +115,7 @@
               <div class="model__photo">
                 <img class="model__img" src="img/model-1@1x.jpg" alt="Модель №1" width="448" height="580">
               </div>
-              <div class="model__toggles toggles">
+              <div class="model__toggles toggles toggles--model">
                 <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
                 <button class="toggles__arrow toggles__arrow--right" aria-label="Следущее фото"></button>
               </div>
@@ -247,7 +249,7 @@
           </ul>
           <button class="slider__slider-toggle slider__slider-toggle--right slider-toggle slider-toggle--right" type="button"></button> 
         </div>  
-        <!-- <div class="number number--participants">
+        <div class="number number--participants">
           <div class="number__wrapper">
             <div class="number__count">
               <span class="number__numeral number__numeral--active">02</span>
@@ -256,12 +258,12 @@
             </div>
             <div class="number__toggles">
               <a class="number__toggle number__toggle--left" href="#judges"></a>
-              <a class="number__toggle number__toggle--right" aria-label="следующий блок"></a>
+              <a class="number__toggle number__toggle--right" href="#preview" aria-label="следующий блок"></a>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
-      <section class="judges">
+      <section class="judges" id="judges">
         <h2 class="judges__headline headline">Судьи BFW`19</h2>
         <div class="slider__wrapper">
           <button class="slider__slider-toggle slider__slider-toggle--left slider-toggle slider-toggle--left" type="button" aria-label="предыдущий слайд"></button>
@@ -363,7 +365,7 @@
           </ul>
           <button class="slider__slider-toggle slider__slider-toggle--right slider-toggle slider-toggle--right" type="button" aria-label="следующий слайд"></button>
         </div>
-        <!-- <div class="number number--judges">
+        <div class="number number--judges">
           <div class="number__wrapper">
             <div class="number__count">
               <span class="number__numeral number__numeral--active">03</span>
@@ -372,12 +374,12 @@
             </div>
             <div class="number__toggles">
               <a class="number__toggle number__toggle--left" href="#tickets"></a>
-              <a class="number__toggle number__toggle--right" aria-label="следующий блок"></a>
+              <a class="number__toggle number__toggle--right" href="#participants" aria-label="следующий блок"></a>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
-      <section class="tickets">
+      <section class="tickets" id="tickets">
         <h2 class="tickets__headline headline">Билеты</h2>
         <div class="tickets__wrapper">
           <div class="tickets__column">
@@ -468,6 +470,19 @@
             </tr>
           </table>
         </div>
+        <div class="number">
+          <div class="number__wrapper">
+            <div class="number__count">
+              <span class="number__numeral number__numeral--active">04</span>
+              <span class="number__numeral">/</span>
+              <span class="number__numeral">05</span>
+            </div>
+            <div class="number__toggles">
+              <a class="number__toggle number__toggle--left" href="#contacts"></a>
+              <a class="number__toggle number__toggle--right" href="#judges" aria-label="следующий блок"></a>
+            </div>
+          </div>
+        </div>
         <div class="popup">
           <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
           <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
@@ -505,7 +520,7 @@
           </div>
         </div>    
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
         <div class="contacts__container">
           <div class="contacts__column-left">
@@ -580,6 +595,19 @@
           <div class="feedback-thanks__thanks-container">
             <p class="feedback-thanks__text">Спасибо за ваш вопрос! Ваша заявка в работе. Мы ответим в течение дня обязательно, будьте на связи!</p>
             <button class="feedback-thanks__button button">Понятно</button>
+          </div>
+        </div>
+        <div class="number">
+          <div class="number__wrapper">
+            <div class="number__count">
+              <span class="number__numeral number__numeral--active">05</span>
+              <span class="number__numeral">/</span>
+              <span class="number__numeral">05</span>
+            </div>
+            <div class="number__toggles">
+              <a class="number__toggle number__toggle--left" href="#preview"></a>
+              <a class="number__toggle number__toggle--right" href="#tickets"></a>
+            </div>
           </div>
         </div>
       </section>  

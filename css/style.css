@@ -9,6 +9,39 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/playfair-display-black.woff2") format("woff2"), url("../fonts/playfair-display-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/playfair-display-bold.woff2"), url("../fonts/playfair-display-bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 input {
   -webkit-appearance: none;
 }
@@ -29,8 +62,8 @@ textarea {
 
 .main-header {
   position:fixed;
-  /* top: 0;
-  left: 0; */
+  top: 0;
+  left: 0;
   background-color:#7965ad;
   margin: 0;
   z-index: 5; 
@@ -39,18 +72,28 @@ textarea {
 
 .main-header__content-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 4.2%;
   box-sizing: border-box;
 }
 
+.main-header__wrapper {
+  width: 903px;
+  margin-left:  20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .main-header__title {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-right: auto;
 }
 
 .main-header__logo {
@@ -229,11 +272,10 @@ label[for="eng"]::before {
 }
 
 .preview {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  margin: 0;
   position: relative;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
   width: 100%;
   background: url("../img/main-overlay.svg");
   background-repeat: no-repeat;
@@ -243,12 +285,13 @@ label[for="eng"]::before {
 }
 
 .preview__wrapper {
+  width: 100%;
+  max-width: 1920px;
   display: flex;
   position: relative;
-  width: 100%;
   padding: 305px 10px 48px 40px;
-  max-width: 1920px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .preview__text-block {
@@ -266,7 +309,8 @@ label[for="eng"]::before {
 
 .preview__headline {
   width: 100%;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: "Playfair", "Arial", sans-serif;
   font-size: 72px;
   line-height: 79px;
   color: #fff5f5;
@@ -282,26 +326,20 @@ label[for="eng"]::before {
 
 .preview__img {
   display: block;
-  position: relative;
-  right:230px;
-  /* top: 17px; */
-  bottom: 0;
 }
 
-.preview__image {
-  position: relative;
-  margin-top: 27px;
-
-}
 
 .preview__image {
   display: block;
+  position: absolute;
+  right: 2px;
+  bottom: 0;
   border: 10px solid #f2c03f;
-  box-sizing: border-box;
   width: 645px;
   height: 878px;
   box-sizing: border-box;
-
+  margin-top: 27px;
+  z-index: 0;
 }
 
 .info-list {
@@ -388,8 +426,12 @@ label[for="eng"]::before {
   color: #f2c03f;
 }
 
+.preview__button:active,
+.popup__reserve-button:active {
+  opacity: 0.5;
+}
 .preview__button::after,
-.popup__reserve-button::after{
+.popup__reserve-button::after {
   content:"";
   position: absolute;
   top: 0;
@@ -407,9 +449,19 @@ label[for="eng"]::before {
 }
 
 .preview__toggles {
-  position: relative;
-  top: 830px;
-  right: 100px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+.preview__toggles .toggles__arrow--left:after {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+
+.preview__toggles .toggles__arrow--right:after {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
 
 .social-list {
@@ -593,20 +645,12 @@ label[for="eng"]::before {
   border-right: 1px solid #f2c03f;
 }
 
-.number.number--participants {
-  position: relative;
-  bottom: 100px;
-  left: 0;
-  top: -300px;
-}
-
-
 .toggles {
-  width: 42px;
+  width: 48px;
   height: 28px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .toggles--model {
@@ -710,7 +754,9 @@ label[for="eng"]::before {
   align-items: center;
   max-width: 1700px;
   margin: 0 0 0 auto;
-  padding: 0 71px;
+  padding-left: 85px;
+  padding-right: 71px;
+  box-sizing: border-box;
 }
 
 .slider__slider-toggle {
@@ -723,6 +769,10 @@ label[for="eng"]::before {
   left: 0;
 }
 
+.slider__slider-toggle--right {
+  right: 0;
+}
+
 .slider-toggle {
   padding: 0;
   background: 0 0;
@@ -730,7 +780,6 @@ label[for="eng"]::before {
   cursor: pointer;
   outline: 0;
   color: inherit;
-  position: relative;
   width: 32px;
   height: 64px;
   overflow: hidden;
@@ -784,6 +833,7 @@ label[for="eng"]::before {
 
 .headline {
   font-weight: 700;
+  font-family: "Playfair", "Arial", sans-serif;
   font-size: 72px;
   line-height: 91px;
   letter-spacing: 0.03em;
@@ -794,6 +844,7 @@ label[for="eng"]::before {
 }
 
 .participants {
+  position: relative;
   width: 1920px;
   margin: 0 auto;
   padding: 173px 77px 25px 69px;
@@ -801,6 +852,7 @@ label[for="eng"]::before {
 }
 
 .participants__headline {
+  margin-left: 80px;
   margin-bottom: 40px;  
 } 
 
@@ -944,9 +996,11 @@ label[for="eng"]::before {
 }
 
 .judges {
-  width: 1920px;
+  position: relative;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 173px 77px 25px 69px;
+  box-sizing: border-box;
 }
 
 .judges__items {
@@ -1007,6 +1061,7 @@ label[for="eng"]::before {
 }
 
 .judges__headline {
+  margin-left: 70px; 
   margin-bottom: 50px; 
 }
 
@@ -1053,10 +1108,10 @@ label[for="eng"]::before {
 
 .tickets {
     position: relative;
-    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     padding: 194px 24px 312px 7.45%;
+    box-sizing: border-box;
 }
 
 .tickets__headline {
@@ -1171,11 +1226,11 @@ label[for="eng"]::before {
 }
 
 .contacts {
-  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 190px 24px 84px 7.45%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .contacts__container {
@@ -1367,6 +1422,10 @@ label[for="eng"]::before {
   background-color: #f2c03f;
   border-color: #f2c03f;
   color: #ffffff;
+}
+
+.button:active {
+  opacity: 0.5;
 }
 
 .feedback-thanks__text,
