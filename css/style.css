@@ -105,6 +105,20 @@ textarea {
   height: 145px;
 }
 
+@media (max-width: 1023px) {
+  .main-header__logo {
+    width: 138px;
+    height: 92px;
+  }  
+}
+
+@media (max-width: 767px) {
+  .main-header__logo {
+    width: 108px;
+    height: 72px;
+  }  
+}
+
 .hashtag {   
   text-decoration: none;
   cursor: pointer;
@@ -116,6 +130,7 @@ textarea {
   color: #f7bf2f;
   opacity: 0.87;
 }
+
 
 .main-header__hashtag {
   opacity: 0;
@@ -307,6 +322,13 @@ label[for="eng"]::before {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .preview__hashtag {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .preview__headline {
   width: 100%;
   font-weight: 900;
@@ -316,6 +338,20 @@ label[for="eng"]::before {
   color: #fff5f5;
   margin: 0;
   margin-bottom: 70px;
+}
+
+@media (max-width: 1023px) {
+  .preview__headline {
+    font-size: 56px;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 767px) {
+  .preview__headline {
+    font-size: 32px;
+    line-height: 110%;
+  }
 }
 
 .preview__ticket-reservation-link-arrow {
@@ -351,6 +387,12 @@ label[for="eng"]::before {
   list-style: none;
 }
 
+@media (max-width: 1023px) {
+  .info-list {
+    flex-direction: column;
+  }
+}
+
 .info-list__item {
   position: relative;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
@@ -358,6 +400,12 @@ label[for="eng"]::before {
   padding-right: 32px;
   padding-left: 104px;
   opacity: 0.74;
+}
+
+@media (max-width: 1023px) {
+  .info-list__item {
+    padding: 0;
+  }
 }
 
 .info-list__item p {
@@ -421,6 +469,16 @@ label[for="eng"]::before {
   margin-bottom: 140px;
 }
 
+@media (max-width: 1023px) {
+  .preview__button,
+  .popup__reserve-button {
+    width: 274px;
+    height: 68px;
+    padding: 24px 88px 10px 11px;
+    box-sizing: border-box;
+  }
+}
+
 .preview__button:hover,
 .popup__reserve-button:hover {
   color: #f2c03f;
@@ -445,8 +503,16 @@ label[for="eng"]::before {
   width: 107px;
   height: 93px;
   background-color: #f2c03f;
-
 }
+
+@media (max-width: 1023px) {
+  .preview__button::after,
+  .popup__reserve-button::after {
+    width: 78px;
+    height: 68px;
+  }
+}
+
 
 .preview__toggles {
   position: absolute;
@@ -830,7 +896,6 @@ label[for="eng"]::before {
   border-top: 2px solid #f2c03f;
 }
 
-
 .headline {
   font-weight: 700;
   font-family: "Playfair", "Arial", sans-serif;
@@ -841,6 +906,19 @@ label[for="eng"]::before {
   opacity: 0.87; 
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 1023px) {
+  .headline {
+    font-size: 56px;
+    line-height: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headline {
+    font-size: 32px;
+  }
 }
 
 .participants {
@@ -969,6 +1047,12 @@ label[for="eng"]::before {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .stylist__name {
+    font-size: 21px;
+  }
+}
+
 .stylist__country {
   font-size: 14px;
   line-height: 17px;
@@ -1076,6 +1160,12 @@ label[for="eng"]::before {
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .judges__name {
+    font-size: 28px;
+  }
+}
+
 .judges__desc {
   font-size: 18px;
   line-height: 150%;
@@ -1164,6 +1254,12 @@ label[for="eng"]::before {
   line-height: 150%;
   color:  rgba(95, 75, 139, 0.87); 
   margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .tickets__phone {
+    font-size: 18px;
+  }
 }
 
 .tickets__phone:hover {
@@ -1276,6 +1372,21 @@ label[for="eng"]::before {
   margin-bottom: 60px;
 }
 
+@media (max-width: 1023px) {
+  .contacts__question {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts__question {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+
 .contacts__wrapper {
   display: flex;
   margin-bottom: 30px;
@@ -1347,7 +1458,7 @@ label[for="eng"]::before {
 
 .popup {
   margin: 0 auto;
-  display: none;
+  display: block;
 }
 
 .user-form__wrapper,
@@ -1411,6 +1522,14 @@ label[for="eng"]::before {
   box-sizing: border-box;
 }
 
+@media (max-width: 1023px) {
+  .button {
+    width: 121px;
+    font-size: 16px;
+    line-height: 19px;
+  }  
+}
+
 .button--violet {
   border: transparent;
   color: #ffffff;
@@ -1436,9 +1555,26 @@ label[for="eng"]::before {
   font-size: 40px;
   line-height: 48px;
   color: #303030;
-  margin:0;
+  margin: 0;
   margin-bottom: 40px;
 }
+
+@media (max-width: 1023px) {
+  .feedback-thanks__text,
+  .popup__text {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback-thanks__text,
+  .popup__text {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
 
 .popup__wrapper {
   width: 540px;
