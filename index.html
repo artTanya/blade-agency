@@ -96,7 +96,12 @@
           </div> 
         </div>   
         <div class="preview__image">
-          <img class="preview__img" src="img/main-background-desktop@1x.png" alt="Фото модели">
+          <picture>
+            <source type="image/webp"  media="(min-width: 1024px)"srcset="img/main-background-desktop@1x.webp 1x, img/main-background-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-background-tablet@1x.webp 1x, img/main-background-tablet@2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/main-background-desktop@1x.png 1x, img/main-background-desktop@2x.png 2x">
+            <img class="preview__img" src="img/main-background-desktop@1x.png" alt="Фото модели">
+          </picture>
         </div>
         <div class="preview__toggles toggles">
           <button class="toggles__arrow toggles__arrow--left" type="button" aria-label="Предыдущий"></button>
@@ -113,7 +118,10 @@
                 <p class="model__text">Классика, нуар</p>
               </div>
               <div class="model__photo">
-                <img class="model__img" src="img/model-1@1x.jpg" alt="Модель №1" width="448" height="580">
+                <picture>
+                  <source type="image/webp" srcset="img/model-1@1x.webp 1x, img/model-1@2x.webp 2x">
+                  <img class="model__img" src="img/model-1@1x.jpg" srcset="img/model-1@2x.jpg 2x" alt="Модель №1" width="448" height="580">
+                </picture>
               </div>
               <div class="model__toggles toggles toggles--model">
                 <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
@@ -122,7 +130,10 @@
               <div class="model__stylist stylist">
                 <div class="stylist__wrapper">
                   <div class="stylist__photo">
-                    <img class="stylist__image" src="img/stylist-1@1x.png" alt="Cтилист Девид Робинсон">
+                    <picture>
+                      <source type="image/webp" srcset="img/stylist-1@1x.webp 1x, img/stylist-1@2x.webp 2x"> 
+                      <img class="stylist__image" src="img/stylist-1@1x.png" srcset="img/stylist-1@2x.png 2x" alt="Cтилист Девид Робинсон">
+                    </picture>    
                   </div>
                   <h3 class="stylist__name">Дэвид Робинсон</h3>
                 </div>
@@ -159,7 +170,10 @@
                 <p class="model__text model__text--avangard">Авангард, импрессионизм</p>
               </div>
               <div class="model__photo model__photo--second">
-                <img class="model__img" src="img/model-2@1x.jpg" alt="Модель №2" width="448" height="580">
+                <picture>
+                  <source type="image/webp" srcset="img/model-2@1x.webp 1x, img/model-2@2x.webp 2x">
+                  <img class="model__img" src="img/model-2@1x.jpg" srcset="img/model-2@2x.jpg 2x" alt="Модель №2" width="448" height="580">
+                </picture>
               </div>
               <div class="model__toggles toggles toggles--model">
                 <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
@@ -168,7 +182,10 @@
               <div class="model__stylist stylist">
                 <div class="stylist__wrapper">
                   <div class="stylist__photo">
-                    <img class="stylist__image" src="img/stylist-2@1x.png" alt="Стилист Келли Макдональд">
+                    <picture>
+                      <source type="image/webp" srcset="img/stylist-2@1x.webp 1x, img/stylist-2@2x.webp 2x"> 
+                      <img class="stylist__image" src="img/stylist-2@1x.png" srcset="img/stylist-2@2x.png 2x" alt="Cтилист Келли Макдональд">
+                    </picture>
                   </div>
                   <h3 class="stylist__name">Келли Макдональд</h3>
                 </div>
@@ -205,7 +222,10 @@
                 <p class="model__text">Эклектика, эконтренд</p>
               </div>
               <div class="model__photo">
-                <img class="model__img" src="img/model-3@1x.jpg" alt="Модель №3">
+                <picture>
+                  <source type="image/webp" srcset="img/model-3@1x.webp 1x, img/model-3@2x.webp 2x">
+                  <img class="model__img" src="img/model-3@1x.jpg" srcset="img/model-3@2x.jpg 2x" alt="Модель №3" width="448" height="580">
+                </picture>
               </div>
               <div class="model__toggles toggles toggles--model">
                 <button class="toggles__arrow toggles__arrow--left" aria-label="Предыдущее фото"></button>
@@ -214,7 +234,10 @@
               <div class="model__stylist stylist">
                 <div class="stylist__wrapper">
                   <div class="stylist__photo">
-                    <img class="stylist__image" src="img/stylist-3@1x.png" alt="Стилист Костас Папаниколау">
+                    <picture>
+                      <source type="image/webp" srcset="img/stylist-3@1x.webp 1x, img/stylist-3@2x.webp 2x"> 
+                      <img class="stylist__image" src="img/stylist-3@1x.png" srcset="img/stylist-3@2x.png 2x" alt="Cтилист Костас Папаниколау">
+                    </picture>
                   </div>
                   <h3 class="stylist__name">Костас Папаниколау</h3>
                 </div>
@@ -271,7 +294,10 @@
             <li class="judges__item">
               <div class="judges__border"></div>
               <div class="judges__photo">
-              <img class="judges__img" src="img/referee-1@1x.jpg" alt="Судья №1" width="454" height="382">
+                <picture>
+                  <source type="image/webp" srcset="img/referee-1@1x.webp 1x, img/referee-1@2x.webp 2x">
+                  <img class="judges__img" src="img/referee-1@1x.jpg" alt="Судья №1" width="454" height="382">  
+                </picture>
               </div>
               <div class="judges__info">
                 <div class="judges__wrapper">
@@ -300,7 +326,10 @@
             <li class="judges__item">
               <div class="judges__border"></div>
               <div class="judges__photo">
-              <img class="judges__img" src="img/referee-2@1x.jpg" alt="Судья №2" width="454" height="382">
+                <picture>
+                  <source type="image/webp" srcset="img/referee-2@1x.webp 1x, img/referee-2@2x.webp 2x">
+                  <img class="judges__img" src="img/referee-2@1x.jpg" alt="Судья №2" width="454" height="382">  
+                </picture>
               </div>
               <div class="judges__info">
                 <div class="judges__wrapper">
@@ -336,7 +365,10 @@
             <li class="judges__item">
               <div class="judges__border"></div>
               <div class="judges__photo">
-              <img class="judges__img" src="img/referee-3@1x.jpg" alt="Судья №3" width="454" height="382">
+                <picture>
+                  <source type="image/webp" srcset="img/referee-3@1x.webp 1x, img/referee-3@2x.webp 2x">
+                  <img class="judges__img" src="img/referee-3@1x.jpg" alt="Судья №3" width="454" height="382">  
+                </picture>
               </div>
               <div class="judges__info">
                 <div class="judges__wrapper">
@@ -386,16 +418,28 @@
             <p class="tickets__text">Вы можете приобрести билеты на Blade Fashion Week на нашем сайте: достаточно выбрать один из типов билетов (в зависимости от предлагаемых опций) и произвести оплату онлайн. Мы принимаем оплату:</p>
             <ul class="tickets__payments payments">
               <li class="payments__item">
-                <img src="img/visa@1x.png" alt="visa"  width="47" height="15">
+                <picture>
+                  <source type="image/webp" srcset="img/visa@1x.webp 1x, img/visa@2x.webp 2x">
+                  <img src="img/visa@1x.png" srcset="img/visa@2x.png 2x" alt="visa" width="47" height="15">
+                </picture>
               </li>
               <li class="payments__item">
-                <img src="img/pay@1x.png" alt="pay" width="44" height="21">
+                <picture>
+                  <source type="image/webp" srcset="img/pay@1x.webp 1x, img/pay@2x.webp 2x">
+                  <img src="img/pay@1x.png" srcset="img/pay@2x.png 2x" alt="visa" width="44" height="21">
+                </picture>
               </li>
               <li class="payments__item">
-                <img src="img/master@1x.png" alt="mastercard" width="35" height="27">
+                <picture>
+                  <source type="image/webp" srcset="img/master@1x.webp 1x, img/master@2x.webp 2x">
+                  <img src="img/master@1x.png" srcset="img/master@2x.png 2x" alt="mastercard" width="35" height="27">
+                </picture>
               </li>
               <li class="payments__item">
-                <img src="img/paypal@1x.png" alt="paypal" width="59" height="14">
+                <picture>
+                  <source type="image/webp" srcset="img/paypal@1x.webp 1x, img/paypal@2x.webp 2x">
+                  <img src="img/paypal@1x.png" srcset="img/paypal@2x.png 2x" alt="paypal" width="59" height="14">
+                </picture>
               </li>
             </ul>
             <p class="tickets__text">По всем вопросам, связанным с покупокой, возвратом или предлагаемыми опциями, вы можете обратиться к нашему консультанту по номеру:</p>
@@ -568,7 +612,14 @@
               </div>
             </div>  
             <div class="contacts__map">
-              <img class="contacts__map-img" src="img/map-desktop@1x.jpg" alt="Где нас найти">
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source media="(min-width: 1024px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                <img  class="contacts__map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="мы на карте" width="320" height="359">
+              </picture>  
             </div>
           </div>
           <div class="contacts__column-right">

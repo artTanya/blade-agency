@@ -119,6 +119,12 @@ textarea {
   }  
 }
 
+@media (max-width: 1023px) {
+  .main-header__logotype {
+    max-width: 77%;
+  }
+}
+
 .hashtag {   
   text-decoration: none;
   cursor: pointer;
