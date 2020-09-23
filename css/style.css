@@ -1225,12 +1225,33 @@ label[for="eng"]::before {
 
 .tickets__wrapper {
   display: flex;
+}
 
+@media (max-width: 1023px) {
+  .tickets__wrapper {
+    flex-direction: column;
+  }
 }
 
 .tickets__column {
   width: 480px;
   margin-right: 100px;
+}
+
+@media (max-width: 1023px) {
+  .tickets__column {
+    width: 735px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tickets__column {
+    grid-template-columns: auto;
+    flex-direction: column;
+  }
 }
 
 .judges__social {
@@ -1338,6 +1359,12 @@ label[for="eng"]::before {
 .contacts__container {
   display: flex;
   margin-bottom: 130px;
+}
+
+@media (max-width: 1023px) {
+  .contacts__container {
+    flex-direction: column;
+  }
 }
 
 .contacts__map {
