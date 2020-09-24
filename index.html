@@ -618,12 +618,15 @@
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
                 <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-                <img  class="contacts__map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="мы на карте" width="320" height="359">
+                <img  class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="мы на карте" width="320" height="359">
               </picture>  
             </div>
           </div>
           <div class="contacts__column-right">
-            <p class="contacts__question">Остались вопросы? Спросите нас! Мы ответим!</p>
+            <p class="contacts__question">Остались вопросы? Спросите нас!<br class="contacts__break"> Мы ответим!</p>
+            <div class="contacts__feedback feedback">
+              <a class="feedback__btn-open" href="#">Задать вопрос</a>
+            </div>
             <form action="URL" class="contacts__user-form user-form" method="post">
               <div class="user-form__wrapper">
                 <label class="user-form__label" for="name">Имя</label>
