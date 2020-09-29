@@ -7,6 +7,7 @@ body {
   background-color: #ffffff;
   color: #303030;
   margin: 0;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -69,6 +70,24 @@ textarea {
   z-index: 5; 
   width: 100%;
 }
+
+@media (max-width: 1023px) {
+  .main-header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 92px;
+    background:#7965ad;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header {
+   position: absolute;
+   background: 0 0;
+  }
+}
+
 
 .main-header__content-wrapper {
   display: flex;
@@ -142,6 +161,14 @@ textarea {
   }
 }
 
+@media (max-width:1023px) {
+  .main-header__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .main-header__logo {
   display: flex;
   justify-content: center;
@@ -193,7 +220,13 @@ textarea {
   .main-header__btn {
     display: block;
     right: 49px;
-    background-color: red;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header__btn {
+    right: 24px;
+    top: 22px;
   }
 }
 
@@ -568,6 +601,7 @@ label[for="eng"]::before {
   .preview__headline {
     width: 276px;
     font-size: 32px;
+    font-weight: 700;
     line-height: 110%;
     margin-bottom: 37px;
   }
@@ -1114,6 +1148,14 @@ label[for="eng"]::before {
   box-sizing: border-box;
 }
 
+@media (max-width: 1023px) {
+  .slider__wrapper {
+  padding-left: 3px;
+  padding-right: 0;
+  overflow-x: scroll;
+  }
+}
+
 @media (max-width: 767px) {
   .slider__wrapper {
     margin:0;
@@ -1227,10 +1269,17 @@ label[for="eng"]::before {
 
 .participants {
   position: relative;
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 173px 77px 25px 69px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1023px) {
+  .participants {
+    padding: 108px 0 88px 45px;
+    margin: O;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1432,6 +1481,15 @@ label[for="eng"]::before {
   margin: 0 auto;
   padding: 173px 77px 25px 69px;
   box-sizing: border-box;
+}
+
+@media (max-width: 1023px) {
+  .judges {
+    padding-top: 108px;
+    padding-left: 47px;
+    padding-right: 0;
+    padding-bottom: 98px;
+  }  
 }
 
 @media (max-width: 767px) {
@@ -1661,6 +1719,7 @@ label[for="eng"]::before {
 @media (max-width: 767px) {
   .tickets__headline {
     margin-bottom: 35px;
+    padding-left: 0;
   }
 }
 
@@ -1697,6 +1756,7 @@ label[for="eng"]::before {
 @media (max-width: 1023px) {
   .tickets__wrapper {
     flex-direction: column;
+    overflow-x: scroll;
   }
 }
 
@@ -1721,6 +1781,7 @@ label[for="eng"]::before {
   .tickets__column {
     grid-template-columns: auto;
     margin-bottom: 45px;
+    padding-left: 0;
   }
 }
 
@@ -1852,8 +1913,7 @@ label[for="eng"]::before {
 
 @media (max-width: 767px) {
   .contacts {
-    padding-left: 0;
-    padding-right: 0;
+    padding:24px 0 21px;
   }
 }
 
@@ -1915,7 +1975,7 @@ label[for="eng"]::before {
 @media (max-width: 767px) {
   .contacts__headline {
     width: 200px;
-    margin-left: 5px;
+    margin-left: 17px;
   }
 }
 
@@ -1949,6 +2009,7 @@ label[for="eng"]::before {
     font-size: 24px;
     line-height: 120%;
     margin-top: 0;
+    margin-left: 15px;
   }
 }
 
@@ -1961,7 +2022,7 @@ label[for="eng"]::before {
 @media (max-width: 767px) {
   .contacts__wrapper {
     flex-direction: column;
-    margin-left: 5px;
+    margin-left: 17px;
   }
 }
 
@@ -1971,7 +2032,7 @@ label[for="eng"]::before {
 
 @media (max-width: 767px) {
   .contacts__column-right {
-    width: 220px;
+    width: 235px;
     margin-left: 5px;
   }
 }
@@ -2348,6 +2409,12 @@ label[for="eng"]::before {
     margin: 0 0 10px;
     box-shadow: 0 3px 8px rgba(49, 40, 70, 0.12);
     box-sizing: border-box;
+  }
+
+  @media (max-width: 767px) {
+    .feedback__btn-open {
+      margin-left: 15px;
+    }
   }
 
   .feedback__btn-open::after {
