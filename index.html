@@ -542,6 +542,41 @@
             </tr>
           </table>
         </div>
+        <div class="tickets__popup popup">
+          <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
+          <div class="popup__logo">
+            <img src="img/blade.svg" alt="Blade" width="180" height="42">
+          </div>
+          <div class="popup__container">
+            <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
+            <form class="popup__form form form--tickets" action="#" name="tickets" method="post">
+              <div class="popup__wrapper">
+                <label class="popup__label" for="name">Имя</label>
+                <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
+                <div class="popup__invalid">
+                  <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
+                </div>
+              </div>
+              <div class="popup__wrapper">
+                <label class="popup__label" for="email">Email</label>
+                <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
+                <div class="popup__invalid">
+                  <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
+                </div>
+              </div>
+              <div class="popup__radio-boxes">
+                <h4 class="popup__title">Статус билета</h4>
+                <input type="radio" id="radio-1" name="status" value="1">
+                <label for="radio-1">Зритель</label>
+                <input type="radio" id="radio-2" name="status" value="2">
+                <label for="radio-2">Оптиум</label>
+                <input type="radio" id="radio-3" name="status" value="3" checked>
+                <label for="radio-3">VIP</label>
+              </div>
+              <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
+            </form>
+          </div>
+        </div>
         <div class="number">
           <div class="number__wrapper">
             <div class="number__count">
@@ -554,43 +589,7 @@
               <a class="number__toggle number__toggle--right" href="#judges" aria-label="следующий блок"></a>
             </div>
           </div>
-        </div>
-        <div class="popup">
-          <p class="popup__text">Чтобы приобрести билет, заполните форму ниже. Мы свяжемся с вами по вопросу оплаты.</p>
-          <button class="popup__btn-close btn-close" type="button" aria-label="Закрыть форму"></button>
-          <form class="popup__form form form--tickets" action="#" name="tickets" method="post">
-            <div class="popup__wrapper">
-              <label class="popup__label" for="name">Имя</label>
-              <input class="popup__input" type="text" id="popup-name" placeholder="Введите имя" required>
-              <div class="popup__invalid">
-                <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
-              </div>
-            </div>
-            <div class="popup__wrapper">
-              <label class="popup__label" for="email">Email</label>
-              <input class="popup__input" type="email" id="popup-email" placeholder="Введите e-mail" required>
-              <div class="popup__invalid">
-                <p>Недопустимое значение поля. Пожалуйста, повторите ввод.</p>
-              </div>
-            </div>
-            <div class="popup__radio-boxes">
-              <h4 class="popup__title">Статус билета</h4>
-              <input type="radio" id="radio-1" name="status" value="1">
-              <label for="radio-1">Зритель</label>
-              <input type="radio" id="radio-2" name="status" value="2">
-              <label for="radio-2">Оптиум</label>
-              <input type="radio" id="radio-3" name="status" value="3" checked>
-              <label for="radio-3">VIP</label>
-            </div>
-              <a class="popup__reserve-button popup__reserve-button--shadow">Бронь билета</a>
-          </form>
-          <div class="popup__thanks">
-            <div class="popup__text">
-              <p>Спасибо за интерес к Blade Fashion Week 2019! Мы уже готовим ваше персональное приглашение.<br>Скоро сообщим о всех деталях.</p>
-            </div>
-            <button class="popup__thanks-btn button" type="button">Понятно</button>
-          </div>
-        </div>    
+        </div>  
       </section>
       <section class="contacts" id="contacts">
         <h2 class="contacts__headline headline">Cвяжитесь с нами</h2>
@@ -695,5 +694,7 @@
       </section>  
       <div class="overlay"></div>
     </main>
+    <script src="js/open-menu.js"></script>
+    <script src="js/open-popup.js"></script>
   </body>
 </html>  
