@@ -377,6 +377,7 @@ textarea {
   letter-spacing: 0.02em;
   padding: 0 15px 4px;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
  @media (max-width: 1023px) {
@@ -2174,6 +2175,7 @@ label[for="eng"]::before {
 .contacts__link  {
   text-decoration: none;
   color:  #303030;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .contacts__link--dashed {
@@ -2231,6 +2233,8 @@ label[for="eng"]::before {
 
 .popup--open {
   display: block;
+  animation: show 0.3s ease;
+  animation-fill-mode: forwards;
 }
 
 @media (max-width: 1023px) {
@@ -2287,6 +2291,13 @@ label[for="eng"]::before {
   padding-bottom: 60px;
 }
 
+.user-form__textarea[placeholder] {
+  font-size: 18px;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #303030;
+}
+
+
 .popup__radio-boxes {
   margin-bottom: 47px;
 }
@@ -2313,6 +2324,7 @@ label[for="eng"]::before {
   border-radius: 5px;
   padding: 12px;
   box-sizing: border-box;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease, opacity 0.3s ease;
 }
 
 @media (max-width: 1023px) {
@@ -2511,6 +2523,8 @@ label[for="eng"]::before {
 
 .contacts__feedback-thanks--open {
   display: block;
+  animation: show 0.3s ease;
+  animation-fill-mode: forwards;
 }
 
 .feedback-thanks__btn-close {
