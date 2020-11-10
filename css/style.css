@@ -352,7 +352,7 @@ textarea {
     flex-direction: column;
     width: 100%;
     margin: 0 0 79px;
-    order:1;
+    order: 1;
   }  
 }
 
@@ -423,8 +423,11 @@ textarea {
 
 
 .switch-lang {
+  position: relative;
   display: flex;
   align-items: center;
+  width: 43px;
+  height: 24px;
 }
 
 /* @media (max-width: 1023px) {
@@ -469,28 +472,39 @@ textarea {
   height: 6px;
   position: absolute;
   right: -10px;
-  top: 7px;
+  top: 9px;
   background-image: url("../img/triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.switch-lang--open .switch-lang__button::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .switch-lang__list {
   display: none;
+  position: absolute;
+  top: 30px;
+  right: -10px;
   width: 112px;
-  height: 92px;
   list-style: none;
   margin: 0;
   padding: 0;
   border-radius: 5px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
+}
+
+.switch-lang--open .switch-lang__list {
+  display: block;
 }
 
 .switch-lang__item {
   width: 100%;
   border-bottom: 1px solid rgba(48, 48, 48, 0.1);
-  /* padding-top: 19px;
-  padding-bottom: 10px; */
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .switch-lang__item label {
@@ -507,6 +521,12 @@ textarea {
   transition: color 0.3s ease;
 }
 
+.switch-lang__item label:hover {
+  color: #7965ad;
+}
+
+
+
 .switch-lang__item label::before {
   content: "";
   display: block;
@@ -519,6 +539,10 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   transition: filter 0.3s ease;
+}
+
+.switch-lang__item label:hover::before {
+  filter: drop-shadow(0 0 3px #7965ad);
 }
 
 .switch-lang__item label::after {
@@ -833,6 +857,7 @@ label[for="eng"]::before {
   padding: 35px 133px 10px 10px;
   box-sizing: border-box;
   margin-bottom: 140px;
+  transition: color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
 @media (max-width: 1023px) {
@@ -2269,6 +2294,12 @@ label[for="eng"]::before {
   line-height: 150%;
   border: none;
   border-bottom: 1px solid #afb4b9;
+  transition: border 0.3s ease;
+}
+
+.user-form__input:hover,
+.popup__input:hover {
+  border-bottom: 1px solid #f2c03f;
 }
 
 .user-form__label,
