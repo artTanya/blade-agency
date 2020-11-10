@@ -946,11 +946,19 @@ label[for="eng"]::before {
 }
 
 .social-list__link {
+  opacity: 0.6;
+  transition: opacity 0.1s ease;
   text-decoration: none;
 }
 
-.social-list__link:hover svg {
-  fill:red;
+.social-list__link svg {
+  fill: #ffffff;
+  transition: fill 0.1s ease;
+}
+
+.social-list__link:hover svg,
+.social-list__link:active svg {
+  fill: #f2c03f;
 }
 
 .social-list__item {
@@ -1407,8 +1415,6 @@ label[for="eng"]::before {
 .participants__participants-list {
   width: 1700px; 
   position: relative;
-  /* padding-left: 115px;
-  padding-right: 85px; */
   box-sizing: border-box;
 }
 
@@ -1565,6 +1571,19 @@ label[for="eng"]::before {
 .social__item {
   width: 24px;
   height:24px;
+}
+
+.social__item svg {
+  fill: #303030;
+  opacity: 0.8;
+  transition: fill 0.1s ease, width 0.1s ease, height 0.1s ease;;
+}
+
+.social__item:hover  svg,
+.social__item:focus  svg {
+  width: 24px;
+  height: 24px;
+  fill: #f2c03f;
 }
 
 .stylist__social.social__item {
@@ -2319,7 +2338,7 @@ label[for="eng"]::before {
   resize: none;
   border: none;
   border-bottom: 1px solid #afb4b9;
-  padding-bottom: 60px;
+  padding-bottom: 7px;
 }
 
 .user-form__textarea[placeholder] {
@@ -2332,6 +2351,7 @@ label[for="eng"]::before {
 .popup__radio-boxes {
   margin-bottom: 47px;
 }
+
 
 .user-form__input{
   padding-bottom: 20px;
@@ -2460,6 +2480,10 @@ label[for="eng"]::before {
 
 .popup__radio-boxes label {
   margin-right: 20px;
+}
+
+.popup__radio-boxes label:hover {
+  color: #f2c03f;
 }
 
 .btn-close {
